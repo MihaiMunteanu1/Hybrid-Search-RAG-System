@@ -1,6 +1,8 @@
 ## Project name
 Hybrid Search RAG System: question answering over a university's documents, with citations
 
+![The welcome page of the application](docs/images/mainApp.png)
+
 
 ## Introduction
 A local web app that answers questions from a library of documents (regulations, guides,
@@ -16,14 +18,14 @@ Every component was chosen by measurement on a development set and then checked 
 a held-out test set. The decisions and the numbers behind them are in
 [docs/DESIGN.md](docs/DESIGN.md).
 
-![A Romanian question answered from the English ECTS guide, with its five numbered sources](docs/images/answer.png)
+![An English question answered from a Romanian regulation, with its numbered citations](docs/images/answer.png)
 
-*A question in Romanian answered from an English document. Every claim cites a numbered
-source; the cited one is highlighted.*
+*A question in English answered from a Romanian regulation. The library on the left lists
+the documents of the folder; every claim in the answer cites a numbered source.*
 
 ![The cited source opened at the cited page](docs/images/viewer.png)
 
-*Each source opens the original document at the cited page.*
+*Each source opens the original document at the cited page, here page 8 of the regulation.*
 
 ## How a question is answered
 
