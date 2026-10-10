@@ -16,6 +16,15 @@ Every component was chosen by measurement on a development set and then checked 
 a held-out test set. The decisions and the numbers behind them are in
 [docs/DESIGN.md](docs/DESIGN.md).
 
+![A Romanian question answered from the English ECTS guide, with its five numbered sources](docs/images/answer.png)
+
+*A question in Romanian answered from an English document. Every claim cites a numbered
+source; the cited one is highlighted.*
+
+![The cited source opened at the cited page](docs/images/viewer.png)
+
+*Each source opens the original document at the cited page.*
+
 ## How a question is answered
 
 ```
@@ -119,6 +128,7 @@ data/
   eval/                  question sets, results, answers
 docs/
   DESIGN.md              design decisions and their measurements
+  images/                screenshots used in this README
 ```
 
 ## Running with Docker
