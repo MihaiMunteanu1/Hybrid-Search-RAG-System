@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Answer review</title>
+<style>
+:root {
+  color-scheme: light dark;
+  --bg: #f6f6f3; --panel: #ffffff; --ink: #1d1d1b; --muted: #6b6b66; --line: #e2e1dc;
+  --accent: #2f5bd3; --accent-soft: #e6ecfb; --mark: #fde68a; --mark-ink: #1d1d1b;
+  --good: #1f8a4c; --mid: #c27c0e; --bad: #c2352b; --info: #2f5bd3; --none: #b9b8b2;
+  --good-soft: #e3f3e9; --bad-soft: #fbe7e5; --mid-soft: #fbf0dc;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #161615; --panel: #1f1f1d; --ink: #ecebe6; --muted: #9b9a94; --line: #34332f;
+    --accent: #7c9cf0; --accent-soft: #232b40; --mark: #6b5513; --mark-ink: #fff6d6;
+    --good: #5cc58a; --mid: #e3a64a; --bad: #ef7a70; --info: #7c9cf0; --none: #55544f;
+    --good-soft: #1b3125; --bad-soft: #3a1f1c; --mid-soft: #382c17;
+  }
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; }
+body {
+  background: var(--bg); color: var(--ink);
+  font: 14px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif;
+  display: grid; grid-template-rows: auto 1fr; overflow: hidden;
+}
+button, select, textarea, input { font: inherit; color: inherit; }
+header {
+  display: flex; flex-wrap: wrap; gap: 8px 20px; align-items: center;
+  padding: 10px 16px; border-bottom: 1px solid var(--line); background: var(--panel);
+}
+header h1 { font-size: 15px; margin: 0; font-weight: 600; }
+.tabs { display: flex; gap: 4px; }
+.tab {
+  border: 1px solid var(--line); background: transparent; border-radius: 6px;
+  padding: 3px 10px; cursor: pointer;
+}
+.tab.on { background: var(--accent-soft); border-color: var(--accent); color: var(--accent); }
+.stats { display: flex; flex-wrap: wrap; gap: 4px 18px; color: var(--muted); font-size: 13px; }
+.stats b { color: var(--ink); font-weight: 600; font-variant-numeric: tabular-nums; }
+.layout { display: grid; grid-template-columns: 230px 1fr; min-height: 0; }
+nav {
+  border-right: 1px solid var(--line); overflow-y: auto; background: var(--panel);
+  display: flex; flex-direction: column;
+}
+nav label.filter { padding: 8px 12px; color: var(--muted); font-size: 13px; border-bottom: 1px solid var(--line); }
+nav ul { list-style: none; margin: 0; padding: 4px 0; }
+nav li {
+  display: grid; grid-template-columns: 12px 38px 1fr auto; gap: 6px; align-items: center;
+  padding: 4px 12px; cursor: pointer; font-size: 13px;
+}
+nav li:hover { background: var(--bg); }
+nav li.on { background: var(--accent-soft); }
+nav li .type { color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+nav li .flags { color: var(--muted); font-size: 12px; }
+.dot { width: 10px; height: 10px; border-radius: 50%; background: var(--none); }
+.v-correct, .v-ok { background: var(--good); }
+.v-partial { background: var(--mid); }
+.v-wrong, .v-refused, .v-missed { background: var(--bad); }
+main { overflow-y: auto; padding: 18px 24px 80px; }
+.card { max-width: 980px; margin: 0 auto; display: grid; gap: 14px; }
+.qhead { display: flex; gap: 10px; align-items: baseline; color: var(--muted); font-size: 13px; }
+.qhead .id { font-weight: 600; color: var(--ink); }
+.chip {
+  display: inline-block; border: 1px solid var(--line); border-radius: 999px;
+  padding: 0 8px; font-size: 12px;
+}
+.question { font-size: 19px; font-weight: 600; line-height: 1.35; margin: 2px 0 0; }
+section {
+  background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px;
+}
+section > h2 {
+  font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted);
+  margin: 0 0 8px; font-weight: 600; display: flex; justify-content: space-between; align-items: center;
+}
+.cols { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.answer-text { white-space: pre-wrap; font-size: 15px; }
+.warn { color: var(--bad); font-size: 13px; }
+.hint { color: var(--muted); font-size: 13px; }
+.quote-block { border-top: 1px solid var(--line); padding-top: 8px; margin-top: 8px; }
+.quote-block:first-of-type { border-top: 0; margin-top: 0; padding-top: 0; }
+.src-name { font-size: 13px; color: var(--muted); }
+.src-name a { color: var(--accent); }
+.context {
+  position: relative; white-space: pre-wrap; font-size: 13px; color: var(--muted); max-height: 260px; overflow-y: auto;
+  border-left: 3px solid var(--line); padding-left: 10px; margin-top: 4px;
+}
+mark { background: var(--mark); color: var(--mark-ink); border-radius: 2px; padding: 0 1px; }
+.context mark { font-weight: 500; }
+.cite {
+  display: inline-block; min-width: 1.6em; text-align: center; border-radius: 4px; cursor: pointer;
+  background: var(--accent-soft); color: var(--accent); font-size: 12px; font-weight: 600; padding: 0 3px;
+}
+details.src { border: 1px solid var(--line); border-radius: 8px; margin-top: 6px; }
+details.src summary {
+  cursor: pointer; padding: 6px 10px; display: flex; gap: 8px; align-items: center; font-size: 13px;
+}
+details.src summary .name { flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+details.src .body { position: relative; white-space: pre-wrap; font-size: 13px; padding: 0 12px 10px; max-height: 360px; overflow-y: auto; }
+.badge { font-size: 11px; border-radius: 4px; padding: 0 6px; font-weight: 600; }
+.badge.cited { background: var(--accent-soft); color: var(--accent); }
+.badge.gold { background: var(--good-soft); color: var(--good); }
+.flash { outline: 2px solid var(--accent); }
+.verdict-row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.vbtn {
+  border: 1px solid var(--line); background: transparent; border-radius: 8px; padding: 6px 14px;
+  cursor: pointer; position: relative;
+}
+.vbtn kbd { color: var(--muted); font-size: 11px; margin-right: 6px; font-family: inherit; }
+.vbtn.proposed::after {
+  content: "proposed"; position: absolute; top: -8px; right: 6px; font-size: 10px;
+  background: var(--panel); color: var(--muted); padding: 0 3px;
+}
+.vbtn.on.good { background: var(--good-soft); border-color: var(--good); color: var(--good); }
+.vbtn.on.mid { background: var(--mid-soft); border-color: var(--mid); color: var(--mid); }
+.vbtn.on.bad { background: var(--bad-soft); border-color: var(--bad); color: var(--bad); }
+.proposal { font-size: 13px; color: var(--muted); margin-top: 8px; }
+.proposal b { color: var(--ink); }
+textarea {
+  width: 100%; border: 1px solid var(--line); border-radius: 6px; background: var(--bg);
+  padding: 6px 8px; resize: vertical;
+}
+select { border: 1px solid var(--line); border-radius: 6px; background: var(--bg); padding: 3px 6px; max-width: 100%; }
+.check { display: flex; gap: 8px; align-items: center; cursor: pointer; font-weight: 500; }
+.check input { width: 16px; height: 16px; }
+.btn {
+  border: 1px solid var(--line); background: var(--panel); border-radius: 6px; padding: 3px 10px; cursor: pointer;
+}
+.btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+.btn.link { border: 0; background: transparent; color: var(--accent); padding: 0; font-size: 12px; }
+.edit-gold { display: grid; gap: 6px; border: 1px dashed var(--line); border-radius: 8px; padding: 8px; margin-top: 6px; }
+.row { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.navbtns { display: flex; justify-content: space-between; align-items: center; }
+#toast {
+  position: fixed; bottom: 16px; left: 50%; transform: translateX(-50%); padding: 6px 14px;
+  border-radius: 8px; background: var(--ink); color: var(--bg); font-size: 13px; opacity: 0;
+  transition: opacity .2s; pointer-events: none;
+}
+#toast.show { opacity: .92; }
+#toast.err { background: var(--bad); color: #fff; }
+@media (max-width: 760px) {
+  body { overflow: auto; }
+  .layout { grid-template-columns: 1fr; }
+  nav { max-height: 180px; border-right: 0; border-bottom: 1px solid var(--line); }
+  .cols { grid-template-columns: 1fr; }
+  main { padding: 14px 16px 80px; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>Answer review</h1>
+  <div class="tabs" id="tabs"></div>
+  <div class="stats" id="stats"></div>
+</header>
+<div class="layout">
+  <nav>
+    <label class="filter"><input type="checkbox" id="todo"> only unfinished</label>
+    <ul id="list"></ul>
+  </nav>
+  <main id="main"></main>
+</div>
+<div id="toast"></div>
+<script>
+const TONE = { correct: "good", ok: "good", partial: "mid", wrong: "bad", refused: "bad", missed: "bad" };
+let run = null, current = 0, editing = false;
+const $ = (id) => document.getElementById(id);
+
+function esc(s) {
+  return String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+}
+
+function toast(msg, err) {
+  const t = $("toast");
+  t.textContent = msg;
+  t.className = "show" + (err ? " err" : "");
+  clearTimeout(toast.timer);
+  toast.timer = setTimeout(() => (t.className = ""), err ? 4000 : 1200);
+}
+
+// Wilson score interval, 95%.
+function wilson(k, n) {
+  if (!n) return "";
+  const z = 1.96, p = k / n, d = 1 + z * z / n;
+  const c = (p + z * z / (2 * n)) / d, h = z * Math.sqrt(p * (1 - p) / n + z * z / (4 * n * n)) / d;
+  return `[${Math.round(100 * Math.max(0, c - h))}–${Math.round(100 * Math.min(1, c + h))}%]`;
+}
+
+function share(k, n) {
+  return n ? `<b>${k}/${n}</b> = ${Math.round(100 * k / n)}% ${wilson(k, n)}` : "<b>–</b>";
+}
+
+async function api(path, body) {
+  const r = await fetch(path, body ? { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) } : {});
+  const data = await r.json();
+  if (!r.ok) throw new Error(data.error || r.statusText);
+  return data;
+}
+
+async function loadRun(config, id) {
+  run = await api("/api/run/" + encodeURIComponent(config));
+  let start = 0;
+  try { id = id || localStorage.getItem("review:" + config); } catch (e) {}
+  start = Math.max(0, run.items.findIndex((x) => x.id === id));
+  current = start;
+  editing = false;
+  renderTabs();
+  renderAll();
+}
+
+function renderTabs() {
+  api("/api/configs").then((configs) => {
+    $("tabs").innerHTML = configs.map((c) =>
+      `<button class="tab ${run && run.config === c ? "on" : ""}" data-config="${esc(c)}">${esc(c)}</button>`).join("");
+  });
+}
+
+function renderStats() {
+  const items = run.items;
+  const answerable = items.filter((x) => x.type !== "unanswerable");
+  const unanswerable = items.filter((x) => x.type === "unanswerable");
+  const judged = answerable.filter((x) => x.verdict);
+  const correct = judged.filter((x) => x.verdict === "correct").length;
+  const partial = judged.filter((x) => x.verdict === "partial").length;
+  const uJudged = unanswerable.filter((x) => x.verdict);
+  const agree = items.filter((x) => x.verdict && x.verdict === x.verdict_proposed).length;
+  const pCorrect = answerable.filter((x) => x.verdict_proposed === "correct").length;
+  $("stats").innerHTML = [
+    `verdicts <b>${items.filter((x) => x.verdict).length}/${items.length}</b>`,
+    `questions verified <b>${items.filter((x) => x.verified).length}/${items.length}</b>`,
+    `correct ${share(correct, judged.length)}`,
+    `correct+partial ${share(correct + partial, judged.length)}`,
+    `unanswerable refused ${share(uJudged.filter((x) => x.verdict === "ok").length, uJudged.length)}`,
+    `same as proposed <b>${agree}/${items.filter((x) => x.verdict).length}</b>`,
+    `<span title="Proposed verdicts, over all answerable questions">proposed: correct ${pCorrect}/${answerable.length}</span>`,
+  ].map((s) => `<span>${s}</span>`).join("");
+}
+
+function visible() {
+  const todo = $("todo").checked;
+  return run.items.map((x, i) => [x, i]).filter(([x, i]) => !todo || !x.verdict || !x.verified || i === current);
+}
+
+function renderList() {
+  $("list").innerHTML = visible().map(([x, i]) => `
+    <li class="${i === current ? "on" : ""}" data-i="${i}">
+      <span class="dot ${x.verdict ? "v-" + x.verdict : ""}" title="${esc(x.verdict || "no verdict")}"></span>
+      <span>${esc(x.id)}</span>
+      <span class="type">${esc(x.type)}</span>
+      <span class="flags">${x.verified ? "✓" : ""}${x.verdict && x.verdict_proposed && x.verdict !== x.verdict_proposed ? " ≠" : ""}</span>
+    </li>`).join("");
+  const on = $("list").querySelector("li.on");
+  if (on) on.scrollIntoView({ block: "nearest" });
+}
+
+function highlight(text, marks) {
+  let out = "", pos = 0;
+  for (const [a, b] of marks) {
+    if (a < pos) continue;
+    out += esc(text.slice(pos, a)) + "<mark>" + esc(text.slice(a, b)) + "</mark>";
+    pos = b;
+  }
+  return out + esc(text.slice(pos));
+}
+
+function withCitations(text) {
+  return esc(text).replace(/[*][*]([^*]+)[*][*]/g, "<b>$1</b>").replace(/[[]([0-9]+)]/g, (m, n) => `<span class="cite" data-n="${n}">[${n}]</span>`);
+}
+
+function fileLink(source, page) {
+  return `/file/${source.split("/").map(encodeURIComponent).join("/")}${page && source.toLowerCase().endsWith(".pdf") ? "#page=" + page : ""}`;
+}
+
+function goldView(x) {
+  if (!x.gold.length) return `<p class="hint">No gold: the corpus should not answer this question.</p>`;
+  return x.gold.map((g) => `
+    <div class="quote-block">
+      <div class="src-name">${esc(g.source)}${g.page ? ", page " + g.page : ""} ·
+        <a href="${fileLink(g.source, g.page)}" target="_blank" rel="noopener">open original</a>
+        ${g.found > 1 ? ` · occurs ${g.found} times (first shown)` : ""}</div>
+      ${g.found ? `<div class="context">…${esc(g.before)}<mark>${esc(g.match)}</mark>${esc(g.after)}…</div>`
+                : `<p class="warn">Quote not found in the document: ${esc(g.quote)}</p>`}
+    </div>`).join("");
+}
+
+function goldEditor(x) {
+  const options = (sel) => run.documents.map((d) => `<option ${d === sel ? "selected" : ""}>${esc(d)}</option>`).join("");
+  const types = run.types.map((t) => `<option ${t === x.type ? "selected" : ""}>${t}</option>`).join("");
+  return `
+    <div class="row"><label class="hint">Type</label><select id="e-type">${types}</select></div>
+    <label class="hint">Expected answer</label>
+    <textarea id="e-answer" rows="3">${esc(x.answer)}</textarea>
+    <label class="hint">Gold quotes (any one is enough; an unanswerable question has none). A quote must appear verbatim in the extracted text; line breaks do not matter.</label>
+    <div id="e-gold">${x.gold.map((g) => goldRow(g.source, g.quote, options)).join("")}</div>
+    <div class="row"><button class="btn" id="e-add">+ quote</button></div>
+    <label class="hint">Question note (why the label changed, with the date)</label>
+    <textarea id="e-note" rows="2">${esc(x.note)}</textarea>
+    <div class="row"><button class="btn primary" id="e-save">Save</button><button class="btn" id="e-cancel">Cancel</button></div>`;
+}
+
+function goldRow(source, quote, options) {
+  return `<div class="edit-gold"><div class="row"><select class="e-src">${options(source)}</select>
+    <button class="btn link e-del">remove</button></div>
+    <textarea class="e-quote" rows="2">${esc(quote)}</textarea></div>`;
+}
+
+function renderCard() {
+  const x = run.items[current];
+  if (!x) { $("main").innerHTML = ""; return; }
+  const changed = [];
+  if (x.asked !== x.question) changed.push(`The run was asked: <i>${esc(x.asked)}</i>`);
+  if (x.expected_at_run !== x.answer) changed.push(`Expected answer at run time: <i>${esc(x.expected_at_run)}</i>`);
+  const proposedNote = x.verdict_note ? ` — ${esc(x.verdict_note)}` : "";
+  $("main").innerHTML = `
+  <div class="card">
+    <div>
+      <div class="qhead"><span class="id">${esc(x.id)}</span><span class="chip">${esc(x.type)}</span><span class="chip">${esc(x.lang || "")}</span>
+        <span>${current + 1} / ${run.items.length}</span></div>
+      <p class="question">${esc(x.question)}</p>
+      ${changed.map((c) => `<p class="hint">${c}</p>`).join("")}
+    </div>
+
+    <div class="cols">
+      <section>
+        <h2>Expected ${editing ? "" : `<button class="btn link" id="edit">edit answer / gold</button>`}</h2>
+        ${editing ? goldEditor(x) : `<div class="answer-text">${esc(x.answer)}</div>${x.note ? `<p class="hint">Note: ${esc(x.note)}</p>` : ""}`}
+      </section>
+      <section>
+        <h2>Model reply ${x.found ? "" : `<span class="badge cited">refusal</span>`}</h2>
+        <div class="answer-text">${withCitations(x.text)}</div>
+        ${x.refusal ? `<p class="hint">Refusal: ${esc(x.refusal)}</p>` : ""}
+        ${x.invalid_citations.length ? `<p class="warn">Invalid citations: ${esc(x.invalid_citations.join(", "))}</p>` : ""}
+        ${x.first_raw !== null ? `<details><summary class="hint">first reply, before the citation request</summary><div class="answer-text hint">${esc(x.first_raw)}</div></details>` : ""}
+      </section>
+    </div>
+
+    ${editing ? "" : `<section><h2>Gold in its context</h2>${goldView(x)}</section>`}
+
+    <section>
+      <h2>Verdict</h2>
+      <div class="verdict-row">
+        ${x.verdicts.map((v, k) => `<button class="vbtn ${TONE[v]} ${x.verdict === v ? "on" : ""} ${x.verdict_proposed === v ? "proposed" : ""}" data-v="${v}"><kbd>${k + 1}</kbd>${v}</button>`).join("")}
+        ${x.verdict ? `<button class="btn link" id="clear">clear</button>` : ""}
+      </div>
+      <p class="proposal">Proposed verdict: <b>${esc(x.verdict_proposed || "–")}</b>${proposedNote}</p>
+      <label class="check"><input type="checkbox" id="verified" ${x.verified ? "checked" : ""}>
+        Question, expected answer and gold checked <span class="hint">(v)</span></label>
+      <label class="hint" style="display:block;margin-top:8px">Your note (optional; saved when you leave the box)</label>
+      <textarea id="review-note" rows="2">${esc(x.review_note)}</textarea>
+    </section>
+
+    <section>
+      <h2>Sources given to the model</h2>
+      ${x.sources.map((s) => `
+        <details class="src" id="src-${s.n}" ${s.gold || s.cited ? "open" : ""}>
+          <summary><span class="cite">[${s.n}]</span><span class="name">${esc(s.source)}${s.page ? ", p. " + s.page : ""}</span>
+            ${s.cited ? `<span class="badge cited">cited</span>` : ""}${s.gold ? `<span class="badge gold">gold</span>` : ""}</summary>
+          <div class="body">${highlight(s.text, s.marks)}</div>
+        </details>`).join("")}
+      ${x.gold.length && !x.sources.some((s) => s.gold) ? `<p class="warn">No source overlaps the gold: retrieval missed it.</p>` : ""}
+    </section>
+
+    <div class="navbtns">
+      <button class="btn" id="prev">← previous (k)</button>
+      <span class="hint">keys: 1–${x.verdicts.length} verdict · v checked · j / k next / previous</span>
+      <button class="btn" id="next">next (j) →</button>
+    </div>
+  </div>`;
+  // Scroll each excerpt to its first highlighted part.
+  for (const box of document.querySelectorAll(".context, details.src .body")) {
+    const m = box.querySelector("mark");
+    if (m) box.scrollTop = m.offsetTop - 40;   // the box is the offset parent
+  }
+  try { localStorage.setItem("review:" + run.config, x.id); } catch (e) {}
+}
+
+function renderAll() {
+  renderStats();
+  renderList();
+  renderCard();
+  $("main").scrollTop = 0;
+}
+
+async function save(change, message) {
+  const x = run.items[current];
+  try {
+    const updated = await api("/api/save", { config: run.config, id: x.id, ...change });
+    run.items[current] = updated;
+    renderStats();
+    renderList();
+    toast(message || "saved");
+    return true;
+  } catch (e) {
+    toast(e.message, true);
+    return false;
+  }
+}
+
+function go(i) {
+  if (i < 0 || i >= run.items.length) return;
+  current = i;
+  editing = false;
+  renderAll();
+}
+
+function step(d) {
+  const shown = visible().map(([, i]) => i);
+  const k = shown.indexOf(current);
+  if (k + d >= 0 && k + d < shown.length) go(shown[k + d]);
+}
+
+async function setVerdict(v) {
+  const x = run.items[current];
+  if (await save({ verdict: x.verdict === v ? null : v }, x.verdict === v ? "verdict cleared" : "verdict: " + v)) renderCard();
+}
+
+async function toggleVerified() {
+  const x = run.items[current];
+  if (await save({ verified: !x.verified }, x.verified ? "unchecked" : "checked")) renderCard();
+}
+
+document.addEventListener("click", async (e) => {
+  const t = e.target.closest("button, li, .cite");
+  if (!t) return;
+  if (t.matches(".tab")) loadRun(t.dataset.config);
+  else if (t.matches("nav li")) go(+t.dataset.i);
+  else if (t.matches(".vbtn")) setVerdict(t.dataset.v);
+  else if (t.id === "clear") setVerdict(run.items[current].verdict);
+  else if (t.id === "prev") step(-1);
+  else if (t.id === "next") step(1);
+  else if (t.id === "edit") { editing = true; renderCard(); }
+  else if (t.id === "e-cancel") { editing = false; renderCard(); }
+  else if (t.id === "e-add") {
+    const options = (sel) => run.documents.map((d) => `<option ${d === sel ? "selected" : ""}>${esc(d)}</option>`).join("");
+    const first = run.items[current].gold[0];
+    $("e-gold").insertAdjacentHTML("beforeend", goldRow(first ? first.source : run.documents[0], "", options));
+  }
+  else if (t.matches(".e-del")) t.closest(".edit-gold").remove();
+  else if (t.id === "e-save") {
+    const gold = [...document.querySelectorAll(".edit-gold")].map((g) => ({
+      source: g.querySelector(".e-src").value, quote: g.querySelector(".e-quote").value }));
+    const ok = await save({ type: $("e-type").value, answer: $("e-answer").value, gold, note: $("e-note").value }, "expected answer and gold saved");
+    if (ok) { editing = false; renderCard(); }
+  }
+  else if (t.matches(".cite")) {
+    const d = document.getElementById("src-" + t.dataset.n);
+    if (d) {
+      d.open = true;
+      d.scrollIntoView({ behavior: "smooth", block: "center" });
+      d.classList.add("flash");
+      setTimeout(() => d.classList.remove("flash"), 1200);
+    }
+  }
+});
+
+document.addEventListener("change", (e) => {
+  if (e.target.id === "verified") toggleVerified();
+  else if (e.target.id === "todo") renderList();
+  else if (e.target.id === "review-note") save({ review_note: e.target.value }, "note saved");
+});
+
+document.addEventListener("keydown", (e) => {
+  if ((e.target instanceof Element && e.target.closest("textarea, select, input:not([type=checkbox])")) || e.ctrlKey || e.metaKey || e.altKey || editing) return;
+  const x = run && run.items[current];
+  if (!x) return;
+  if (e.key === "j" || e.key === "ArrowRight") step(1);
+  else if (e.key === "k" || e.key === "ArrowLeft") step(-1);
+  else if (e.key === "v") toggleVerified();
+  else if (/^[1-9]$/.test(e.key) && x.verdicts[+e.key - 1]) setVerdict(x.verdicts[+e.key - 1]);
+  else return;
+  e.preventDefault();
+});
+
+// A link can open one answer directly: #<config>/<question id>, e.g. #test2-final/v17.
+const [linkedRun, linkedId] = decodeURIComponent(location.hash.slice(1)).split("/");
+api("/api/configs").then((configs) => loadRun(configs.includes(linkedRun) ? linkedRun : configs[0], linkedId))
+  .catch((e) => toast(e.message, true));
+</script>
+</body>
+</html>

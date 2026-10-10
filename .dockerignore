@@ -1,0 +1,13 @@
+# Everything the image does not need. data/ and models/ are mounted at run time.
+.git/
+.venv/
+.idea/
+.env
+__pycache__/
+*.py[cod]
+data/
+models/
+docs/
+*.md
+frontend/node_modules/
+frontend/dist/

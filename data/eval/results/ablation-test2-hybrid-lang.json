@@ -1,0 +1,2856 @@
+{
+  "strategy": "structure",
+  "mode": "hybrid",
+  "per_language": true,
+  "rerank": false,
+  "list_k": 5,
+  "candidates": 20,
+  "verified": 0,
+  "total": 44,
+  "overall": {
+    "n": 40,
+    "recall@1": {
+      "found": 20,
+      "value": 0.5,
+      "ci95": [
+        0.35199278797099753,
+        0.6480072120290025
+      ]
+    },
+    "recall@3": {
+      "found": 25,
+      "value": 0.625,
+      "ci95": [
+        0.47032160054531913,
+        0.7577722646420829
+      ]
+    },
+    "recall@5": {
+      "found": 27,
+      "value": 0.675,
+      "ci95": [
+        0.52017458088898,
+        0.7991568303733828
+      ]
+    },
+    "recall@10": {
+      "found": 30,
+      "value": 0.75,
+      "ci95": [
+        0.598057409330299,
+        0.8581303210445048
+      ]
+    },
+    "mrr": 0.5767261904761904
+  },
+  "by_type": {
+    "cross_lingual": {
+      "n": 7,
+      "recall@1": {
+        "found": 1,
+        "value": 0.14285714285714285,
+        "ci95": [
+          0.02567895594897479,
+          0.51313450331903
+        ]
+      },
+      "recall@3": {
+        "found": 2,
+        "value": 0.2857142857142857,
+        "ci95": [
+          0.0822171657090155,
+          0.6410709098517873
+        ]
+      },
+      "recall@5": {
+        "found": 3,
+        "value": 0.42857142857142855,
+        "ci95": [
+          0.15821692226262685,
+          0.7495457695909742
+        ]
+      },
+      "recall@10": {
+        "found": 4,
+        "value": 0.5714285714285714,
+        "ci95": [
+          0.2504542304090258,
+          0.8417830777373732
+        ]
+      },
+      "mrr": 0.2704081632653061
+    },
+    "fact": {
+      "n": 24,
+      "recall@1": {
+        "found": 14,
+        "value": 0.5833333333333334,
+        "ci95": [
+          0.3883433764938864,
+          0.7553265275346177
+        ]
+      },
+      "recall@3": {
+        "found": 16,
+        "value": 0.6666666666666666,
+        "ci95": [
+          0.4670595949408046,
+          0.8202802131162036
+        ]
+      },
+      "recall@5": {
+        "found": 17,
+        "value": 0.7083333333333334,
+        "ci95": [
+          0.508319363412903,
+          0.8508553966583573
+        ]
+      },
+      "recall@10": {
+        "found": 19,
+        "value": 0.7916666666666666,
+        "ci95": [
+          0.5952915551476452,
+          0.9075531089521192
+        ]
+      },
+      "mrr": 0.6392857142857143
+    },
+    "paraphrase": {
+      "n": 6,
+      "recall@1": {
+        "found": 3,
+        "value": 0.5,
+        "ci95": [
+          0.18761280689940868,
+          0.8123871931005913
+        ]
+      },
+      "recall@3": {
+        "found": 4,
+        "value": 0.6666666666666666,
+        "ci95": [
+          0.29998832134152864,
+          0.9032306674407831
+        ]
+      },
+      "recall@5": {
+        "found": 4,
+        "value": 0.6666666666666666,
+        "ci95": [
+          0.29998832134152864,
+          0.9032306674407831
+        ]
+      },
+      "recall@10": {
+        "found": 4,
+        "value": 0.6666666666666666,
+        "ci95": [
+          0.29998832134152864,
+          0.9032306674407831
+        ]
+      },
+      "mrr": 0.5833333333333334
+    },
+    "table": {
+      "n": 3,
+      "recall@1": {
+        "found": 2,
+        "value": 0.6666666666666666,
+        "ci95": [
+          0.2076549551264879,
+          0.9385096847238394
+        ]
+      },
+      "recall@3": {
+        "found": 3,
+        "value": 1.0,
+        "ci95": [
+          0.43849391955098227,
+          1.0
+        ]
+      },
+      "recall@5": {
+        "found": 3,
+        "value": 1.0,
+        "ci95": [
+          0.43849391955098227,
+          1.0
+        ]
+      },
+      "recall@10": {
+        "found": 3,
+        "value": 1.0,
+        "ci95": [
+          0.43849391955098227,
+          1.0
+        ]
+      },
+      "mrr": 0.7777777777777778
+    }
+  },
+  "unanswerable_top_scores": [
+    0.03278688524590164,
+    0.03278688524590164,
+    0.0315136476426799,
+    0.03278688524590164
+  ],
+  "answerable_top_scores": [
+    0.01639344262295082,
+    0.01639344262295082,
+    0.01639344262295082,
+    0.031746031746031744,
+    0.031754032258064516,
+    0.03177805800756621,
+    0.03200204813108039,
+    0.032018442622950824,
+    0.032018442622950824,
+    0.03225806451612903,
+    0.032266458495966696,
+    0.032266458495966696,
+    0.032266458495966696,
+    0.032266458495966696,
+    0.032266458495966696,
+    0.03252247488101534,
+    0.03252247488101534,
+    0.03252247488101534,
+    0.03252247488101534,
+    0.03252247488101534,
+    0.03252247488101534,
+    0.03278688524590164,
+    0.03278688524590164,
+    0.03278688524590164,
+    0.03278688524590164,
+    0.03278688524590164,
+    0.03278688524590164,
+    0.03278688524590164,
+    0.03278688524590164,
+    0.03278688524590164,
+    0.03278688524590164,
+    0.03278688524590164,
+    0.03278688524590164,
+    0.03278688524590164,
+    0.03278688524590164,
+    0.03278688524590164,
+    0.03278688524590164,
+    0.03278688524590164,
+    0.03278688524590164,
+    0.03278688524590164
+  ],
+  "questions": [
+    {
+      "id": "v01",
+      "type": "fact",
+      "verified": false,
+      "rank": 1,
+      "top_score": 0.03278688524590164,
+      "top": [
+        {
+          "source": "ubb/regulament_activitate_profesionala.pdf",
+          "page": 8,
+          "heading_path": "CAP. V. ÎNTRERUPEREA STUDIILOR, EXMATRICULAREA, REÎNMATRICULAREA, PRELUNGIREA STUDIILOR",
+          "score": 0.0328,
+          "ranks": {
+            "dense": 1,
+            "sparse": 1
+          }
+        },
+        {
+          "source": "ubb/regulament_activitate_profesionala.pdf",
+          "page": 8,
+          "heading_path": "CAP. V. ÎNTRERUPEREA STUDIILOR, EXMATRICULAREA, REÎNMATRICULAREA, PRELUNGIREA STUDIILOR",
+          "score": 0.032,
+          "ranks": {
+            "dense": 2,
+            "sparse": 3
+          }
+        },
+        {
+          "source": "ubb/regulament_activitate_profesionala.pdf",
+          "page": 9,
+          "heading_path": "CAP. V. ÎNTRERUPEREA STUDIILOR, EXMATRICULAREA, REÎNMATRICULAREA, PRELUNGIREA STUDIILOR",
+          "score": 0.032,
+          "ranks": {
+            "dense": 3,
+            "sparse": 2
+          }
+        },
+        {
+          "source": "ubb/regulament_activitate_profesionala.pdf",
+          "page": 9,
+          "heading_path": "CAP. V. ÎNTRERUPEREA STUDIILOR, EXMATRICULAREA, REÎNMATRICULAREA, PRELUNGIREA STUDIILOR",
+          "score": 0.0312,
+          "ranks": {
+            "dense": 4,
+            "sparse": 4
+          }
+        },
+        {
+          "source": "ubb/internship_agreement_model.docx",
+          "page": null,
+          "heading_path": "",
+          "score": 0.0164,
+          "ranks": {
+            "dense": 1
+          }
+        }
+      ],
+      "ranks_by_search": {
+        "dense": 1,
+        "sparse": 1
+      }
+    },
+    {
+      "id": "v02",
+      "type": "fact",
+      "verified": false,
+      "rank": 1,
+      "top_score": 0.03278688524590164,
+      "top": [
+        {
+          "source": "ubb/regulament_activitate_profesionala.pdf",
+          "page": 5,
+          "heading_path": "CAP. IV. FRECVENȚA LA ACTIVITATEA DIDACTICĂ, OBȚINEREA CREDITELOR ȘI PROMOVAREA",
+          "score": 0.0328,
+          "ranks": {
+            "dense": 1,
+            "sparse": 1
+          }
+        },
+        {
+          "source": "ubb/regulament_activitate_profesionala.pdf",
+          "page": 2,
+          "heading_path": "CAP. II. ÎNMATRICULAREA LA FACULTATE ȘI DOCUMENTELE STUDENTULUI",
+          "score": 0.032,
+          "ranks": {
+            "dense": 3,
+            "sparse": 2
+          }
+        },
+        {
+          "source": "ubb/regulament_activitate_profesionala.pdf",
+          "page": 2,
+          "heading_path": "CAP. II. ÎNMATRICULAREA LA FACULTATE ȘI DOCUMENTELE STUDENTULUI",
+          "score": 0.0315,
+          "ranks": {
+            "dense": 2,
+            "sparse": 5
+          }
+        },
+        {
+          "source": "ubb/regulament_activitate_profesionala.pdf",
+          "page": 4,
+          "heading_path": "CAP. IV. FRECVENȚA LA ACTIVITATEA DIDACTICĂ, OBȚINEREA CREDITELOR ȘI PROMOVAREA",
+          "score": 0.0313,
+          "ranks": {
+            "dense": 5,
+            "sparse": 3
+          }
+        },
+        {
+          "source": "ubb/internship_agreement_model.docx",
+          "page": null,
+          "heading_path": "",
+          "score": 0.0164,
+          "ranks": {
+            "dense": 1
+          }
+        }
+      ],
+      "ranks_by_search": {
+        "dense": 1,
+        "sparse": 1
+      }
+    },
+    {
+      "id": "v03",
+      "type": "fact",
+      "verified": false,
+      "rank": 1,
+      "top_score": 0.03252247488101534,
+      "top": [
+        {
+          "source": "ubb/regulament_activitate_profesionala.pdf",
+          "page": 4,
+          "heading_path": "CAP. IV. FRECVENȚA LA ACTIVITATEA DIDACTICĂ, OBȚINEREA CREDITELOR ȘI PROMOVAREA",
+          "score": 0.0325,
+          "ranks": {
+            "dense": 2,
+            "sparse": 1
+          }
+        },
+        {
+          "source": "ubb/regulament_activitate_profesionala.pdf",
+          "page": 5,
+          "heading_path": "CAP. IV. FRECVENȚA LA ACTIVITATEA DIDACTICĂ, OBȚINEREA CREDITELOR ȘI PROMOVAREA",
+          "score": 0.0323,
+          "ranks": {
+            "dense": 1,
+            "sparse": 3
+          }
+        },
+        {
+          "source": "ubb/regulament_activitate_profesionala.pdf",
+          "page": 5,
+          "heading_path": "CAP. IV. FRECVENȚA LA ACTIVITATEA DIDACTICĂ, OBȚINEREA CREDITELOR ȘI PROMOVAREA",
+          "score": 0.0313,
+          "ranks": {
+            "dense": 3,
+            "sparse": 5
+          }
+        },
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 84,
+          "heading_path": "Annex 1 Glossary > Work Placement Certificate",
+          "score": 0.0164,
+          "ranks": {
+            "dense": 1
+          }
+        },
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 102,
+          "heading_path": "Annex 1 Glossary > Work Placement Certificate",
+          "score": 0.0164,
+          "ranks": {
+            "sparse": 1
+          }
+        }
+      ],
+      "ranks_by_search": {
+        "dense": 2,
+        "sparse": 1
+      }
+    },
+    {
+      "id": "v04",
+      "type": "fact",
+      "verified": false,
+      "rank": 1,
+      "top_score": 0.03278688524590164,
+      "top": [
+        {
+          "source": "ubb/regulament_activitate_profesionala.pdf",
+          "page": 4,
+          "heading_path": "CAP. IV. FRECVENȚA LA ACTIVITATEA DIDACTICĂ, OBȚINEREA CREDITELOR ȘI PROMOVAREA",
+          "score": 0.0328,
+          "ranks": {
+            "dense": 1,
+            "sparse": 1
+          }
+        },
+        {
+          "source": "ubb/regulament_activitate_profesionala.pdf",
+          "page": 9,
+          "heading_path": "CAP. V. ÎNTRERUPEREA STUDIILOR, EXMATRICULAREA, REÎNMATRICULAREA, PRELUNGIREA STUDIILOR",
+          "score": 0.0317,
+          "ranks": {
+            "dense": 3,
+            "sparse": 3
+          }
+        },
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 48,
+          "heading_path": "ECTS and lifelong learning",
+          "score": 0.0164,
+          "ranks": {
+            "dense": 1
+          }
+        },
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 51,
+          "heading_path": "ECTS and quality assurance",
+          "score": 0.0164,
+          "ranks": {
+            "sparse": 1
+          }
+        },
+        {
+          "source": "ubb/regulament_activitate_profesionala.pdf",
+          "page": 4,
+          "heading_path": "CAP. IV. FRECVENȚA LA ACTIVITATEA DIDACTICĂ, OBȚINEREA CREDITELOR ȘI PROMOVAREA",
+          "score": 0.0161,
+          "ranks": {
+            "dense": 2
+          }
+        }
+      ],
+      "ranks_by_search": {
+        "dense": 1,
+        "sparse": 1
+      }
+    },
+    {
+      "id": "v05",
+      "type": "fact",
+      "verified": false,
+      "rank": 1,
+      "top_score": 0.03278688524590164,
+      "top": [
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 11,
+          "heading_path": "Sesiuni științifice/academice organizate de către UBB",
+          "score": 0.0328,
+          "ranks": {
+            "dense": 1,
+            "sparse": 1
+          }
+        },
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 3,
+          "heading_path": "Modificat și completat prin HS nr. 146/25.09.2025-",
+          "score": 0.032,
+          "ranks": {
+            "dense": 3,
+            "sparse": 2
+          }
+        },
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 48,
+          "heading_path": "ECTS and lifelong learning",
+          "score": 0.0164,
+          "ranks": {
+            "dense": 1
+          }
+        },
+        {
+          "source": "ubb/internship_agreement_model.docx",
+          "page": null,
+          "heading_path": "Article 1 - Object of agreement",
+          "score": 0.0164,
+          "ranks": {
+            "sparse": 1
+          }
+        },
+        {
+          "source": "ubb/internship_agreement_model.docx",
+          "page": null,
+          "heading_path": "",
+          "score": 0.0161,
+          "ranks": {
+            "dense": 2
+          }
+        }
+      ],
+      "ranks_by_search": {
+        "dense": 1,
+        "sparse": 1
+      }
+    },
+    {
+      "id": "v06",
+      "type": "paraphrase",
+      "verified": false,
+      "rank": 1,
+      "top_score": 0.03278688524590164,
+      "top": [
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 14,
+          "heading_path": "Sesiuni științifice/academice organizate de către UBB",
+          "score": 0.0328,
+          "ranks": {
+            "dense": 1,
+            "sparse": 1
+          }
+        },
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 18,
+          "heading_path": "Sesiuni științifice/academice organizate de către UBB",
+          "score": 0.0318,
+          "ranks": {
+            "dense": 4,
+            "sparse": 2
+          }
+        },
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 31,
+          "heading_path": "Cuantumurile burselor și sursele de finanțare aferente",
+          "score": 0.0317,
+          "ranks": {
+            "dense": 3,
+            "sparse": 3
+          }
+        },
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 31,
+          "heading_path": "Cuantumurile burselor și sursele de finanțare aferente",
+          "score": 0.0315,
+          "ranks": {
+            "dense": 2,
+            "sparse": 5
+          }
+        },
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 48,
+          "heading_path": "ECTS and lifelong learning",
+          "score": 0.0164,
+          "ranks": {
+            "dense": 1
+          }
+        }
+      ],
+      "ranks_by_search": {
+        "dense": 1,
+        "sparse": 1
+      }
+    },
+    {
+      "id": "v07",
+      "type": "fact",
+      "verified": false,
+      "rank": 1,
+      "top_score": 0.03278688524590164,
+      "top": [
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 14,
+          "heading_path": "Sesiuni științifice/academice organizate de către UBB",
+          "score": 0.0328,
+          "ranks": {
+            "dense": 1,
+            "sparse": 1
+          }
+        },
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 13,
+          "heading_path": "Sesiuni științifice/academice organizate de către UBB",
+          "score": 0.0323,
+          "ranks": {
+            "dense": 2,
+            "sparse": 2
+          }
+        },
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 19,
+          "heading_path": "Sesiuni științifice/academice organizate de către UBB",
+          "score": 0.0317,
+          "ranks": {
+            "dense": 3,
+            "sparse": 3
+          }
+        },
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 84,
+          "heading_path": "Annex 1 Glossary > Work Placement Certificate",
+          "score": 0.0164,
+          "ranks": {
+            "dense": 1
+          }
+        },
+        {
+          "source": "ubb/Convolutional_Spiking_Neural_Networks_for_Human_Action_Recognition_EN.pdf",
+          "page": 4,
+          "heading_path": "Introduction > Context and Motivation",
+          "score": 0.0164,
+          "ranks": {
+            "sparse": 1
+          }
+        }
+      ],
+      "ranks_by_search": {
+        "dense": 1,
+        "sparse": 1
+      }
+    },
+    {
+      "id": "v08",
+      "type": "table",
+      "verified": false,
+      "rank": 1,
+      "top_score": 0.03252247488101534,
+      "top": [
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 23,
+          "heading_path": "Campionate mondiale",
+          "score": 0.0325,
+          "ranks": {
+            "dense": 1,
+            "sparse": 2
+          }
+        },
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 22,
+          "heading_path": "Sesiuni științifice/academice organizate de către UBB",
+          "score": 0.032,
+          "ranks": {
+            "dense": 4,
+            "sparse": 1
+          }
+        },
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 23,
+          "heading_path": "CN Universitare/Competiții de prestigiu UBB",
+          "score": 0.0313,
+          "ranks": {
+            "dense": 5,
+            "sparse": 3
+          }
+        },
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 86,
+          "heading_path": "Annex 1 Glossary > Work Placement Certificate",
+          "score": 0.0164,
+          "ranks": {
+            "dense": 1
+          }
+        },
+        {
+          "source": "ubb/Convolutional_Spiking_Neural_Networks_for_Human_Action_Recognition_EN.pdf",
+          "page": 57,
+          "heading_path": "BIBLIOGRAPHY",
+          "score": 0.0164,
+          "ranks": {
+            "sparse": 1
+          }
+        }
+      ],
+      "ranks_by_search": {
+        "dense": 1,
+        "sparse": 2
+      }
+    },
+    {
+      "id": "v09",
+      "type": "fact",
+      "verified": false,
+      "rank": 2,
+      "top_score": 0.03252247488101534,
+      "top": [
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 3,
+          "heading_path": "Modificat și completat prin HS nr. 146/25.09.2025-",
+          "score": 0.0325,
+          "ranks": {
+            "dense": 1,
+            "sparse": 2
+          }
+        },
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 1,
+          "heading_path": "Modificat și completat prin HS nr. 146/25.09.2025-",
+          "score": 0.0325,
+          "ranks": {
+            "dense": 2,
+            "sparse": 1
+          }
+        },
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 24,
+          "heading_path": "CN Universitare/Competiții de prestigiu UBB",
+          "score": 0.0315,
+          "ranks": {
+            "dense": 3,
+            "sparse": 4
+          }
+        },
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 27,
+          "heading_path": "Art. 27. (1)",
+          "score": 0.0308,
+          "ranks": {
+            "dense": 5,
+            "sparse": 5
+          }
+        },
+        {
+          "source": "ubb/tematica_licenta_inteligenta_artificiala_2026.pdf",
+          "page": 1,
+          "heading_path": "June and September 2026",
+          "score": 0.0164,
+          "ranks": {
+            "dense": 1
+          }
+        }
+      ],
+      "ranks_by_search": {
+        "dense": 2,
+        "sparse": 1
+      }
+    },
+    {
+      "id": "v10",
+      "type": "fact",
+      "verified": false,
+      "rank": 1,
+      "top_score": 0.03278688524590164,
+      "top": [
+        {
+          "source": "ubb/ghid_finalizare_studii_2026.docx",
+          "page": null,
+          "heading_path": "",
+          "score": 0.0328,
+          "ranks": {
+            "dense": 1,
+            "sparse": 1
+          }
+        },
+        {
+          "source": "ubb/ghid_finalizare_studii_2026.docx",
+          "page": null,
+          "heading_path": "",
+          "score": 0.0317,
+          "ranks": {
+            "dense": 3,
+            "sparse": 3
+          }
+        },
+        {
+          "source": "ubb/ghid_finalizare_studii_2026.docx",
+          "page": null,
+          "heading_path": "",
+          "score": 0.0315,
+          "ranks": {
+            "dense": 2,
+            "sparse": 5
+          }
+        },
+        {
+          "source": "ubb/ghid_finalizare_studii_2026.docx",
+          "page": null,
+          "heading_path": "",
+          "score": 0.0312,
+          "ranks": {
+            "dense": 4,
+            "sparse": 4
+          }
+        },
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 84,
+          "heading_path": "Annex 1 Glossary > Work Placement Certificate",
+          "score": 0.0164,
+          "ranks": {
+            "dense": 1
+          }
+        }
+      ],
+      "ranks_by_search": {
+        "dense": 1,
+        "sparse": 1
+      }
+    },
+    {
+      "id": "v11",
+      "type": "fact",
+      "verified": false,
+      "rank": 1,
+      "top_score": 0.03278688524590164,
+      "top": [
+        {
+          "source": "ubb/ghid_finalizare_studii_2026.docx",
+          "page": null,
+          "heading_path": "",
+          "score": 0.0328,
+          "ranks": {
+            "dense": 1,
+            "sparse": 1
+          }
+        },
+        {
+          "source": "ubb/ghid_finalizare_studii_2026.docx",
+          "page": null,
+          "heading_path": "",
+          "score": 0.032,
+          "ranks": {
+            "dense": 2,
+            "sparse": 3
+          }
+        },
+        {
+          "source": "ubb/ghid_finalizare_studii_2026.docx",
+          "page": null,
+          "heading_path": "",
+          "score": 0.0315,
+          "ranks": {
+            "dense": 3,
+            "sparse": 4
+          }
+        },
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 84,
+          "heading_path": "Annex 1 Glossary > Work Placement Certificate",
+          "score": 0.0164,
+          "ranks": {
+            "dense": 1
+          }
+        },
+        {
+          "source": "ubb/Convolutional_Spiking_Neural_Networks_for_Human_Action_Recognition_EN.pdf",
+          "page": 57,
+          "heading_path": "BIBLIOGRAPHY",
+          "score": 0.0164,
+          "ranks": {
+            "sparse": 1
+          }
+        }
+      ],
+      "ranks_by_search": {
+        "dense": 1,
+        "sparse": 1
+      }
+    },
+    {
+      "id": "v12",
+      "type": "paraphrase",
+      "verified": false,
+      "rank": 1,
+      "top_score": 0.03278688524590164,
+      "top": [
+        {
+          "source": "ubb/ghid_finalizare_studii_2026.docx",
+          "page": null,
+          "heading_path": "",
+          "score": 0.0328,
+          "ranks": {
+            "dense": 1,
+            "sparse": 1
+          }
+        },
+        {
+          "source": "ubb/ghid_finalizare_studii_2026.docx",
+          "page": null,
+          "heading_path": "",
+          "score": 0.0318,
+          "ranks": {
+            "dense": 4,
+            "sparse": 2
+          }
+        },
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 84,
+          "heading_path": "Annex 1 Glossary > Work Placement Certificate",
+          "score": 0.0164,
+          "ranks": {
+            "dense": 1
+          }
+        },
+        {
+          "source": "ubb/Convolutional_Spiking_Neural_Networks_for_Human_Action_Recognition_EN.pdf",
+          "page": 57,
+          "heading_path": "BIBLIOGRAPHY",
+          "score": 0.0164,
+          "ranks": {
+            "sparse": 1
+          }
+        },
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 85,
+          "heading_path": "Annex 1 Glossary > Work Placement Certificate",
+          "score": 0.0161,
+          "ranks": {
+            "dense": 2
+          }
+        }
+      ],
+      "ranks_by_search": {
+        "dense": 1,
+        "sparse": 1
+      }
+    },
+    {
+      "id": "v13",
+      "type": "paraphrase",
+      "verified": false,
+      "rank": 1,
+      "top_score": 0.03278688524590164,
+      "top": [
+        {
+          "source": "ubb/ghid_finalizare_studii_2026.docx",
+          "page": null,
+          "heading_path": "",
+          "score": 0.0328,
+          "ranks": {
+            "dense": 1,
+            "sparse": 1
+          }
+        },
+        {
+          "source": "ubb/ghid_finalizare_studii_2026.docx",
+          "page": null,
+          "heading_path": "",
+          "score": 0.0317,
+          "ranks": {
+            "dense": 3,
+            "sparse": 3
+          }
+        },
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 84,
+          "heading_path": "Annex 1 Glossary > Work Placement Certificate",
+          "score": 0.0164,
+          "ranks": {
+            "dense": 1
+          }
+        },
+        {
+          "source": "ubb/tematica_licenta_inteligenta_artificiala_2026.pdf",
+          "page": 1,
+          "heading_path": "Part 1. Algorithms and Programming (1/3 of the evaluation)",
+          "score": 0.0164,
+          "ranks": {
+            "sparse": 1
+          }
+        },
+        {
+          "source": "ubb/internship_agreement_model.docx",
+          "page": null,
+          "heading_path": "",
+          "score": 0.0161,
+          "ranks": {
+            "dense": 2
+          }
+        }
+      ],
+      "ranks_by_search": {
+        "dense": 1,
+        "sparse": 1
+      }
+    },
+    {
+      "id": "v14",
+      "type": "fact",
+      "verified": false,
+      "rank": 1,
+      "top_score": 0.03252247488101534,
+      "top": [
+        {
+          "source": "ubb/barem_sustinere_licenta.docx",
+          "page": null,
+          "heading_path": "Facultatea de Matematică și Informatică",
+          "score": 0.0325,
+          "ranks": {
+            "dense": 1,
+            "sparse": 2
+          }
+        },
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 61,
+          "heading_path": "Acknowledgements",
+          "score": 0.0164,
+          "ranks": {
+            "dense": 1
+          }
+        },
+        {
+          "source": "ubb/Convolutional_Spiking_Neural_Networks_for_Human_Action_Recognition_EN.pdf",
+          "page": 57,
+          "heading_path": "BIBLIOGRAPHY",
+          "score": 0.0164,
+          "ranks": {
+            "sparse": 1
+          }
+        },
+        {
+          "source": "ubb/ghid_finalizare_studii_2026.docx",
+          "page": null,
+          "heading_path": "",
+          "score": 0.0164,
+          "ranks": {
+            "sparse": 1
+          }
+        },
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 48,
+          "heading_path": "ECTS and lifelong learning",
+          "score": 0.0161,
+          "ranks": {
+            "dense": 2
+          }
+        }
+      ],
+      "ranks_by_search": {
+        "dense": 1,
+        "sparse": 2
+      }
+    },
+    {
+      "id": "v15",
+      "type": "fact",
+      "verified": false,
+      "rank": null,
+      "top_score": 0.032266458495966696,
+      "top": [
+        {
+          "source": "ubb/tematica_licenta_informatica_2026.pdf",
+          "page": 2,
+          "heading_path": "Specializarea Informatică > Notă",
+          "score": 0.0323,
+          "ranks": {
+            "dense": 3,
+            "sparse": 1
+          }
+        },
+        {
+          "source": "ubb/tematica_licenta_inteligenta_artificiala_2026.pdf",
+          "page": 1,
+          "heading_path": "Courses: Programming fundamentals, Object oriented programming, Data structures and algorithms",
+          "score": 0.032,
+          "ranks": {
+            "dense": 4,
+            "sparse": 1
+          }
+        },
+        {
+          "source": "ubb/programa_informatica_definitivat.pdf",
+          "page": 10,
+          "heading_path": "Programa > obținerea gradului didactic II > INFORMATICĂ > Bibliografie orientativă (Universitățile în cadrul cărora se susțin examene pentru obținerea gradelor didactice pot",
+          "score": 0.0164,
+          "ranks": {
+            "dense": 1
+          }
+        },
+        {
+          "source": "ubb/tematica_licenta_inteligenta_artificiala_2026.pdf",
+          "page": 1,
+          "heading_path": "June and September 2026",
+          "score": 0.0164,
+          "ranks": {
+            "dense": 1
+          }
+        },
+        {
+          "source": "ubb/tematica_licenta_inteligenta_artificiala_2026.pdf",
+          "page": 1,
+          "heading_path": "Note",
+          "score": 0.0161,
+          "ranks": {
+            "dense": 2
+          }
+        }
+      ],
+      "ranks_by_search": {}
+    },
+    {
+      "id": "v16",
+      "type": "paraphrase",
+      "verified": false,
+      "rank": 2,
+      "top_score": 0.01639344262295082,
+      "top": [
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 48,
+          "heading_path": "ECTS and lifelong learning",
+          "score": 0.0164,
+          "ranks": {
+            "dense": 1
+          }
+        },
+        {
+          "source": "ubb/gdpr.pdf",
+          "page": 45,
+          "heading_path": "REGULAMENTE > CAPITOLUL III > Secțiunea 3 > Articolul 20",
+          "score": 0.0164,
+          "ranks": {
+            "dense": 1
+          }
+        },
+        {
+          "source": "ubb/Convolutional_Spiking_Neural_Networks_for_Human_Action_Recognition_EN.pdf",
+          "page": 29,
+          "heading_path": "Theoretical Background > CSNN Simulator Used as Starting Point",
+          "score": 0.0164,
+          "ranks": {
+            "sparse": 1
+          }
+        },
+        {
+          "source": "ubb/gdpr.pdf",
+          "page": 15,
+          "heading_path": "REGULAMENTE",
+          "score": 0.0164,
+          "ranks": {
+            "sparse": 1
+          }
+        },
+        {
+          "source": "ubb/internship_agreement_model.docx",
+          "page": null,
+          "heading_path": "",
+          "score": 0.0161,
+          "ranks": {
+            "dense": 2
+          }
+        }
+      ],
+      "ranks_by_search": {
+        "dense": 1
+      }
+    },
+    {
+      "id": "v17",
+      "type": "cross_lingual",
+      "verified": false,
+      "rank": 2,
+      "top_score": 0.03278688524590164,
+      "top": [
+        {
+          "source": "ubb/regulament_activitate_profesionala.pdf",
+          "page": 1,
+          "heading_path": "CAP. I. DISPOZIȚII GENERALE",
+          "score": 0.0328,
+          "ranks": {
+            "dense": 1,
+            "sparse": 1
+          }
+        },
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 10,
+          "heading_path": "ECTS key features",
+          "score": 0.0328,
+          "ranks": {
+            "dense": 1,
+            "sparse": 1
+          }
+        },
+        {
+          "source": "ubb/regulament_activitate_profesionala.pdf",
+          "page": 4,
+          "heading_path": "CAP. IV. FRECVENȚA LA ACTIVITATEA DIDACTICĂ, OBȚINEREA CREDITELOR ȘI PROMOVAREA",
+          "score": 0.0318,
+          "ranks": {
+            "dense": 2,
+            "sparse": 4
+          }
+        },
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 7,
+          "heading_path": "Introduction",
+          "score": 0.0161,
+          "ranks": {
+            "dense": 2
+          }
+        },
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 32,
+          "heading_path": "ECTS for mobility and credit recognition",
+          "score": 0.0161,
+          "ranks": {
+            "sparse": 2
+          }
+        }
+      ],
+      "ranks_by_search": {
+        "dense": 1,
+        "sparse": 1
+      }
+    },
+    {
+      "id": "v18",
+      "type": "fact",
+      "verified": false,
+      "rank": 1,
+      "top_score": 0.03278688524590164,
+      "top": [
+        {
+          "source": "ubb/regulament_activitate_profesionala.pdf",
+          "page": 4,
+          "heading_path": "CAP. IV. FRECVENȚA LA ACTIVITATEA DIDACTICĂ, OBȚINEREA CREDITELOR ȘI PROMOVAREA",
+          "score": 0.0328,
+          "ranks": {
+            "dense": 1,
+            "sparse": 1
+          }
+        },
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 19,
+          "heading_path": "ECTS key features",
+          "score": 0.0325,
+          "ranks": {
+            "dense": 2,
+            "sparse": 1
+          }
+        },
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 10,
+          "heading_path": "ECTS key features",
+          "score": 0.0323,
+          "ranks": {
+            "dense": 1,
+            "sparse": 3
+          }
+        },
+        {
+          "source": "ubb/regulament_activitate_profesionala.pdf",
+          "page": 1,
+          "heading_path": "CAP. I. DISPOZIȚII GENERALE",
+          "score": 0.032,
+          "ranks": {
+            "dense": 2,
+            "sparse": 3
+          }
+        },
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 30,
+          "heading_path": "ECTS for mobility and credit recognition",
+          "score": 0.032,
+          "ranks": {
+            "dense": 3,
+            "sparse": 2
+          }
+        }
+      ],
+      "ranks_by_search": {
+        "dense": 1,
+        "sparse": 1
+      }
+    },
+    {
+      "id": "v19",
+      "type": "cross_lingual",
+      "verified": false,
+      "rank": 4,
+      "top_score": 0.032266458495966696,
+      "top": [
+        {
+          "source": "ubb/Convolutional_Spiking_Neural_Networks_for_Human_Action_Recognition_EN.pdf",
+          "page": 27,
+          "heading_path": "Theoretical Background > CSNN Simulator Used as Starting Point",
+          "score": 0.0323,
+          "ranks": {
+            "dense": 3,
+            "sparse": 1
+          }
+        },
+        {
+          "source": "ubb/ghid_finalizare_studii_2026.docx",
+          "page": null,
+          "heading_path": "",
+          "score": 0.0323,
+          "ranks": {
+            "dense": 3,
+            "sparse": 1
+          }
+        },
+        {
+          "source": "ubb/regulament_practica_ubb.html",
+          "page": null,
+          "heading_path": "Regulamentul Universității Babeș-Bolyai Cluj-Napoca privind cadrul general de organizare și desfășurare a practicii de specialitate a studenților la nivel licență și master",
+          "score": 0.0164,
+          "ranks": {
+            "dense": 1
+          }
+        },
+        {
+          "source": "ubb/Convolutional_Spiking_Neural_Networks_for_Human_Action_Recognition_EN.pdf",
+          "page": 1,
+          "heading_path": "",
+          "score": 0.0164,
+          "ranks": {
+            "dense": 1
+          }
+        },
+        {
+          "source": "ubb/Convolutional_Spiking_Neural_Networks_for_Human_Action_Recognition_EN.pdf",
+          "page": 57,
+          "heading_path": "BIBLIOGRAPHY",
+          "score": 0.0161,
+          "ranks": {
+            "dense": 2
+          }
+        }
+      ],
+      "ranks_by_search": {
+        "dense": 1
+      }
+    },
+    {
+      "id": "v20",
+      "type": "cross_lingual",
+      "verified": false,
+      "rank": null,
+      "top_score": 0.01639344262295082,
+      "top": [
+        {
+          "source": "ubb/Convolutional_Spiking_Neural_Networks_for_Human_Action_Recognition_EN.pdf",
+          "page": 6,
+          "heading_path": "Bibliography",
+          "score": 0.0164,
+          "ranks": {
+            "dense": 1
+          }
+        },
+        {
+          "source": "ubb/regulament_practica_ubb.html",
+          "page": null,
+          "heading_path": "",
+          "score": 0.0164,
+          "ranks": {
+            "dense": 1
+          }
+        },
+        {
+          "source": "ubb/fisa_disciplinei_practica_informatica.pdf",
+          "page": 3,
+          "heading_path": "asociațiilor profesionale și angajatori reprezentativi din domeniul aferent programului",
+          "score": 0.0164,
+          "ranks": {
+            "sparse": 1
+          }
+        },
+        {
+          "source": "ubb/Convolutional_Spiking_Neural_Networks_for_Human_Action_Recognition_EN.pdf",
+          "page": 27,
+          "heading_path": "Theoretical Background > SVM Classifier (Support Vector Machine)",
+          "score": 0.0164,
+          "ranks": {
+            "sparse": 1
+          }
+        },
+        {
+          "source": "ubb/Convolutional_Spiking_Neural_Networks_for_Human_Action_Recognition_EN.pdf",
+          "page": 5,
+          "heading_path": "Experiments and Evaluation",
+          "score": 0.0161,
+          "ranks": {
+            "dense": 2
+          }
+        }
+      ],
+      "ranks_by_search": {}
+    },
+    {
+      "id": "v21",
+      "type": "cross_lingual",
+      "verified": false,
+      "rank": null,
+      "top_score": 0.01639344262295082,
+      "top": [
+        {
+          "source": "ubb/Convolutional_Spiking_Neural_Networks_for_Human_Action_Recognition_EN.pdf",
+          "page": 48,
+          "heading_path": "Experiments and Evaluation > Comparison with KTH Literature",
+          "score": 0.0164,
+          "ranks": {
+            "dense": 1
+          }
+        },
+        {
+          "source": "ubb/regulament_practica_ubb.html",
+          "page": null,
+          "heading_path": "",
+          "score": 0.0164,
+          "ranks": {
+            "dense": 1
+          }
+        },
+        {
+          "source": "ubb/fisa_disciplinei_practica_informatica.pdf",
+          "page": 3,
+          "heading_path": "asociațiilor profesionale și angajatori reprezentativi din domeniul aferent programului",
+          "score": 0.0164,
+          "ranks": {
+            "sparse": 1
+          }
+        },
+        {
+          "source": "ubb/Convolutional_Spiking_Neural_Networks_for_Human_Action_Recognition_EN.pdf",
+          "page": 49,
+          "heading_path": "Experiments and Evaluation > Interactive Demonstrator for CNN Branch",
+          "score": 0.0164,
+          "ranks": {
+            "sparse": 1
+          }
+        },
+        {
+          "source": "ubb/Convolutional_Spiking_Neural_Networks_for_Human_Action_Recognition_EN.pdf",
+          "page": 47,
+          "heading_path": "Experiments and Evaluation > Direct CNN vs. CSNN Comparison",
+          "score": 0.0161,
+          "ranks": {
+            "dense": 2
+          }
+        }
+      ],
+      "ranks_by_search": {}
+    },
+    {
+      "id": "v22",
+      "type": "table",
+      "verified": false,
+      "rank": 3,
+      "top_score": 0.032266458495966696,
+      "top": [
+        {
+          "source": "ubb/fisa_evaluare_practica_informatica.xlsx",
+          "page": null,
+          "heading_path": "Sheet1",
+          "score": 0.0323,
+          "ranks": {
+            "dense": 1,
+            "sparse": 3
+          }
+        },
+        {
+          "source": "ubb/fisa_evaluare_practica_informatica.xlsx",
+          "page": null,
+          "heading_path": "Sheet1",
+          "score": 0.0323,
+          "ranks": {
+            "dense": 3,
+            "sparse": 1
+          }
+        },
+        {
+          "source": "ubb/fisa_evaluare_practica_informatica.xlsx",
+          "page": null,
+          "heading_path": "Sheet1",
+          "score": 0.0318,
+          "ranks": {
+            "dense": 4,
+            "sparse": 2
+          }
+        },
+        {
+          "source": "ubb/fisa_evaluare_practica_informatica.xlsx",
+          "page": null,
+          "heading_path": "Sheet1",
+          "score": 0.0315,
+          "ranks": {
+            "dense": 2,
+            "sparse": 5
+          }
+        },
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 44,
+          "heading_path": "Punctaj",
+          "score": 0.031,
+          "ranks": {
+            "dense": 5,
+            "sparse": 4
+          }
+        }
+      ],
+      "ranks_by_search": {
+        "dense": 4,
+        "sparse": 2
+      }
+    },
+    {
+      "id": "v23",
+      "type": "cross_lingual",
+      "verified": false,
+      "rank": 7,
+      "top_score": 0.03278688524590164,
+      "top": [
+        {
+          "source": "ubb/regulament_practica_ubb.html",
+          "page": null,
+          "heading_path": "Regulamentul Universității Babeș-Bolyai Cluj-Napoca privind cadrul general de organizare și desfășurare a practicii de specialitate a studenților la nivel licență și master",
+          "score": 0.0328,
+          "ranks": {
+            "dense": 1,
+            "sparse": 1
+          }
+        },
+        {
+          "source": "ubb/regulament_practica_ubb.html",
+          "page": null,
+          "heading_path": "Regulamentul Universității Babeș-Bolyai Cluj-Napoca privind cadrul general de organizare și desfășurare a practicii de specialitate a studenților la nivel licență și master",
+          "score": 0.032,
+          "ranks": {
+            "dense": 3,
+            "sparse": 2
+          }
+        },
+        {
+          "source": "ubb/regulament_practica_ubb.html",
+          "page": null,
+          "heading_path": "Regulamentul Universității Babeș-Bolyai Cluj-Napoca privind cadrul general de organizare și desfășurare a practicii de specialitate a studenților la nivel licență și master",
+          "score": 0.0315,
+          "ranks": {
+            "dense": 2,
+            "sparse": 5
+          }
+        },
+        {
+          "source": "ubb/regulament_practica_ubb.html",
+          "page": null,
+          "heading_path": "Regulamentul Universității Babeș-Bolyai Cluj-Napoca privind cadrul general de organizare și desfășurare a practicii de specialitate a studenților la nivel licență și master",
+          "score": 0.0313,
+          "ranks": {
+            "dense": 5,
+            "sparse": 3
+          }
+        },
+        {
+          "source": "ubb/internship_agreement_model.docx",
+          "page": null,
+          "heading_path": "",
+          "score": 0.0164,
+          "ranks": {
+            "dense": 1
+          }
+        }
+      ],
+      "ranks_by_search": {
+        "dense": 2
+      }
+    },
+    {
+      "id": "v24",
+      "type": "cross_lingual",
+      "verified": false,
+      "rank": 1,
+      "top_score": 0.03278688524590164,
+      "top": [
+        {
+          "source": "ubb/tematica_licenta_inteligenta_artificiala_2026.pdf",
+          "page": 1,
+          "heading_path": "Note",
+          "score": 0.0328,
+          "ranks": {
+            "dense": 1,
+            "sparse": 1
+          }
+        },
+        {
+          "source": "ubb/regulament_practica_ubb.html",
+          "page": null,
+          "heading_path": "",
+          "score": 0.032,
+          "ranks": {
+            "dense": 2,
+            "sparse": 3
+          }
+        },
+        {
+          "source": "ubb/regulament_practica_ubb.html",
+          "page": null,
+          "heading_path": "",
+          "score": 0.0318,
+          "ranks": {
+            "dense": 1,
+            "sparse": 5
+          }
+        },
+        {
+          "source": "ubb/tematica_licenta_inteligenta_artificiala_2026.pdf",
+          "page": 1,
+          "heading_path": "Part 1. Algorithms and Programming (1/3 of the evaluation)",
+          "score": 0.0313,
+          "ranks": {
+            "dense": 3,
+            "sparse": 5
+          }
+        },
+        {
+          "source": "ubb/Convolutional_Spiking_Neural_Networks_for_Human_Action_Recognition_EN.pdf",
+          "page": 1,
+          "heading_path": "",
+          "score": 0.0313,
+          "ranks": {
+            "dense": 5,
+            "sparse": 3
+          }
+        }
+      ],
+      "ranks_by_search": {
+        "dense": 1,
+        "sparse": 1
+      }
+    },
+    {
+      "id": "v25",
+      "type": "table",
+      "verified": false,
+      "rank": 1,
+      "top_score": 0.032018442622950824,
+      "top": [
+        {
+          "source": "ubb/fisa_disciplinei_practica_informatica.pdf",
+          "page": 1,
+          "heading_path": "ore",
+          "score": 0.032,
+          "ranks": {
+            "dense": 1,
+            "sparse": 4
+          }
+        },
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 84,
+          "heading_path": "Annex 1 Glossary > Work Placement Certificate",
+          "score": 0.0164,
+          "ranks": {
+            "dense": 1
+          }
+        },
+        {
+          "source": "ubb/regulament_activitate_profesionala.pdf",
+          "page": 4,
+          "heading_path": "CAP. IV. FRECVENȚA LA ACTIVITATEA DIDACTICĂ, OBȚINEREA CREDITELOR ȘI PROMOVAREA",
+          "score": 0.0164,
+          "ranks": {
+            "sparse": 1
+          }
+        },
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 102,
+          "heading_path": "Annex 1 Glossary > Work Placement Certificate",
+          "score": 0.0164,
+          "ranks": {
+            "sparse": 1
+          }
+        },
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 48,
+          "heading_path": "ECTS and lifelong learning",
+          "score": 0.0161,
+          "ranks": {
+            "dense": 2
+          }
+        }
+      ],
+      "ranks_by_search": {
+        "dense": 1,
+        "sparse": 4
+      }
+    },
+    {
+      "id": "v26",
+      "type": "fact",
+      "verified": false,
+      "rank": 7,
+      "top_score": 0.03278688524590164,
+      "top": [
+        {
+          "source": "ubb/programa_informatica_definitivat.pdf",
+          "page": 6,
+          "heading_path": "Programa > obținerea gradului didactic II > INFORMATICĂ > TEME DE METODICA PREDĂRII DISCIPLINEI",
+          "score": 0.0328,
+          "ranks": {
+            "dense": 1,
+            "sparse": 1
+          }
+        },
+        {
+          "source": "ubb/programa_informatica_definitivat.pdf",
+          "page": 12,
+          "heading_path": "Programa > obținerea gradului didactic II > INFORMATICĂ > TEME DE METODICA PREDĂRII DISCIPLINEI",
+          "score": 0.0323,
+          "ranks": {
+            "dense": 2,
+            "sparse": 2
+          }
+        },
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 48,
+          "heading_path": "ECTS and lifelong learning",
+          "score": 0.0164,
+          "ranks": {
+            "dense": 1
+          }
+        },
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 45,
+          "heading_path": "ECTS and lifelong learning",
+          "score": 0.0164,
+          "ranks": {
+            "sparse": 1
+          }
+        },
+        {
+          "source": "ubb/tematica_licenta_inteligenta_artificiala_2026.pdf",
+          "page": 1,
+          "heading_path": "Part 1. Algorithms and Programming (1/3 of the evaluation)",
+          "score": 0.0161,
+          "ranks": {
+            "dense": 2
+          }
+        }
+      ],
+      "ranks_by_search": {
+        "dense": 3
+      }
+    },
+    {
+      "id": "v27",
+      "type": "fact",
+      "verified": false,
+      "rank": null,
+      "top_score": 0.03278688524590164,
+      "top": [
+        {
+          "source": "ubb/ghid_finalizare_studii_2026.docx",
+          "page": null,
+          "heading_path": "",
+          "score": 0.0328,
+          "ranks": {
+            "dense": 1,
+            "sparse": 1
+          }
+        },
+        {
+          "source": "ubb/ghid_finalizare_studii_2026.docx",
+          "page": null,
+          "heading_path": "",
+          "score": 0.0315,
+          "ranks": {
+            "dense": 5,
+            "sparse": 2
+          }
+        },
+        {
+          "source": "ubb/Convolutional_Spiking_Neural_Networks_for_Human_Action_Recognition_EN.pdf",
+          "page": 6,
+          "heading_path": "Conclusions and Future Directions",
+          "score": 0.0164,
+          "ranks": {
+            "dense": 1
+          }
+        },
+        {
+          "source": "ubb/Convolutional_Spiking_Neural_Networks_for_Human_Action_Recognition_EN.pdf",
+          "page": 41,
+          "heading_path": "Experiments and Evaluation",
+          "score": 0.0164,
+          "ranks": {
+            "sparse": 1
+          }
+        },
+        {
+          "source": "ubb/fisa_evaluare_practica_informatica.xlsx",
+          "page": null,
+          "heading_path": "Sheet1",
+          "score": 0.0161,
+          "ranks": {
+            "dense": 2
+          }
+        }
+      ],
+      "ranks_by_search": {}
+    },
+    {
+      "id": "v28",
+      "type": "fact",
+      "verified": false,
+      "rank": 1,
+      "top_score": 0.03200204813108039,
+      "top": [
+        {
+          "source": "ubb/regulament_practica_ubb.html",
+          "page": null,
+          "heading_path": "Regulamentul Universității Babeș-Bolyai Cluj-Napoca privind cadrul general de organizare și desfășurare a practicii de specialitate a studenților la nivel licență și master",
+          "score": 0.032,
+          "ranks": {
+            "dense": 3,
+            "sparse": 2
+          }
+        },
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 87,
+          "heading_path": "Annex 1 Glossary > Work Placement Certificate",
+          "score": 0.0315,
+          "ranks": {
+            "dense": 4,
+            "sparse": 3
+          }
+        },
+        {
+          "source": "ubb/fisa_disciplinei_practica_informatica.pdf",
+          "page": 1,
+          "heading_path": "MLG7001",
+          "score": 0.0164,
+          "ranks": {
+            "dense": 1
+          }
+        },
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 84,
+          "heading_path": "Annex 1 Glossary > Work Placement Certificate",
+          "score": 0.0164,
+          "ranks": {
+            "dense": 1
+          }
+        },
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 45,
+          "heading_path": "ECTS and lifelong learning",
+          "score": 0.0164,
+          "ranks": {
+            "sparse": 1
+          }
+        }
+      ],
+      "ranks_by_search": {
+        "dense": 3,
+        "sparse": 2
+      }
+    },
+    {
+      "id": "v29",
+      "type": "paraphrase",
+      "verified": false,
+      "rank": null,
+      "top_score": 0.032266458495966696,
+      "top": [
+        {
+          "source": "ubb/fisa_evaluare_practica_informatica.xlsx",
+          "page": null,
+          "heading_path": "Sheet1",
+          "score": 0.0323,
+          "ranks": {
+            "dense": 3,
+            "sparse": 1
+          }
+        },
+        {
+          "source": "ubb/gdpr.pdf",
+          "page": 14,
+          "heading_path": "REGULAMENTE",
+          "score": 0.0164,
+          "ranks": {
+            "dense": 1
+          }
+        },
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 84,
+          "heading_path": "Annex 1 Glossary > Work Placement Certificate",
+          "score": 0.0164,
+          "ranks": {
+            "dense": 1
+          }
+        },
+        {
+          "source": "ubb/Convolutional_Spiking_Neural_Networks_for_Human_Action_Recognition_EN.pdf",
+          "page": 12,
+          "heading_path": "Introduction > Objectives and Thesis Contributions",
+          "score": 0.0164,
+          "ranks": {
+            "sparse": 1
+          }
+        },
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 48,
+          "heading_path": "ECTS and lifelong learning",
+          "score": 0.0161,
+          "ranks": {
+            "dense": 2
+          }
+        }
+      ],
+      "ranks_by_search": {}
+    },
+    {
+      "id": "v30",
+      "type": "fact",
+      "verified": false,
+      "rank": null,
+      "top_score": 0.032018442622950824,
+      "top": [
+        {
+          "source": "ubb/regulament_practica_ubb.html",
+          "page": null,
+          "heading_path": "Regulamentul Universității Babeș-Bolyai Cluj-Napoca privind cadrul general de organizare și desfășurare a practicii de specialitate a studenților la nivel licență și master",
+          "score": 0.032,
+          "ranks": {
+            "dense": 1,
+            "sparse": 4
+          }
+        },
+        {
+          "source": "ubb/gdpr.pdf",
+          "page": 84,
+          "heading_path": "REGULAMENTE > CAPITOLUL IX > Articolul 88",
+          "score": 0.0318,
+          "ranks": {
+            "dense": 5,
+            "sparse": 1
+          }
+        },
+        {
+          "source": "ubb/gdpr.pdf",
+          "page": 28,
+          "heading_path": "REGULAMENTE",
+          "score": 0.0318,
+          "ranks": {
+            "dense": 4,
+            "sparse": 2
+          }
+        },
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 87,
+          "heading_path": "Annex 1 Glossary > Work Placement Certificate",
+          "score": 0.0315,
+          "ranks": {
+            "dense": 5,
+            "sparse": 2
+          }
+        },
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 61,
+          "heading_path": "Acknowledgements",
+          "score": 0.0164,
+          "ranks": {
+            "dense": 1
+          }
+        }
+      ],
+      "ranks_by_search": {}
+    },
+    {
+      "id": "v31",
+      "type": "fact",
+      "verified": false,
+      "rank": 1,
+      "top_score": 0.03278688524590164,
+      "top": [
+        {
+          "source": "ubb/regulament_practica_ubb.html",
+          "page": null,
+          "heading_path": "Regulamentul Universității Babeș-Bolyai Cluj-Napoca privind cadrul general de organizare și desfășurare a practicii de specialitate a studenților la nivel licență și master",
+          "score": 0.0328,
+          "ranks": {
+            "dense": 1,
+            "sparse": 1
+          }
+        },
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 84,
+          "heading_path": "Annex 1 Glossary > Work Placement Certificate",
+          "score": 0.0164,
+          "ranks": {
+            "dense": 1
+          }
+        },
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 45,
+          "heading_path": "ECTS and lifelong learning",
+          "score": 0.0164,
+          "ranks": {
+            "sparse": 1
+          }
+        },
+        {
+          "source": "ubb/regulament_practica_ubb.html",
+          "page": null,
+          "heading_path": "",
+          "score": 0.0161,
+          "ranks": {
+            "dense": 2
+          }
+        },
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 85,
+          "heading_path": "Annex 1 Glossary > Work Placement Certificate",
+          "score": 0.0161,
+          "ranks": {
+            "dense": 2
+          }
+        }
+      ],
+      "ranks_by_search": {
+        "dense": 1,
+        "sparse": 1
+      }
+    },
+    {
+      "id": "v32",
+      "type": "fact",
+      "verified": false,
+      "rank": 1,
+      "top_score": 0.03278688524590164,
+      "top": [
+        {
+          "source": "ubb/regulament_practica_ubb.html",
+          "page": null,
+          "heading_path": "Regulamentul Universității Babeș-Bolyai Cluj-Napoca privind cadrul general de organizare și desfășurare a practicii de specialitate a studenților la nivel licență și master",
+          "score": 0.0328,
+          "ranks": {
+            "dense": 1,
+            "sparse": 1
+          }
+        },
+        {
+          "source": "ubb/regulament_practica_ubb.html",
+          "page": null,
+          "heading_path": "Regulamentul Universității Babeș-Bolyai Cluj-Napoca privind cadrul general de organizare și desfășurare a practicii de specialitate a studenților la nivel licență și master",
+          "score": 0.0317,
+          "ranks": {
+            "dense": 3,
+            "sparse": 3
+          }
+        },
+        {
+          "source": "ubb/regulament_practica_ubb.html",
+          "page": null,
+          "heading_path": "Regulamentul Universității Babeș-Bolyai Cluj-Napoca privind cadrul general de organizare și desfășurare a practicii de specialitate a studenților la nivel licență și master",
+          "score": 0.0315,
+          "ranks": {
+            "dense": 5,
+            "sparse": 2
+          }
+        },
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 86,
+          "heading_path": "Annex 1 Glossary > Work Placement Certificate",
+          "score": 0.0315,
+          "ranks": {
+            "dense": 4,
+            "sparse": 3
+          }
+        },
+        {
+          "source": "ubb/internship_agreement_model.docx",
+          "page": null,
+          "heading_path": "",
+          "score": 0.0164,
+          "ranks": {
+            "dense": 1
+          }
+        }
+      ],
+      "ranks_by_search": {
+        "dense": 1,
+        "sparse": 1
+      }
+    },
+    {
+      "id": "v33",
+      "type": "paraphrase",
+      "verified": false,
+      "rank": null,
+      "top_score": 0.03252247488101534,
+      "top": [
+        {
+          "source": "ubb/gdpr.pdf",
+          "page": 81,
+          "heading_path": "REGULAMENTE > CAPITOLUL VIII > Articolul 80",
+          "score": 0.0325,
+          "ranks": {
+            "dense": 1,
+            "sparse": 2
+          }
+        },
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 87,
+          "heading_path": "Annex 1 Glossary > Work Placement Certificate",
+          "score": 0.0323,
+          "ranks": {
+            "dense": 3,
+            "sparse": 1
+          }
+        },
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 47,
+          "heading_path": "ECTS and lifelong learning",
+          "score": 0.032,
+          "ranks": {
+            "dense": 2,
+            "sparse": 3
+          }
+        },
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 84,
+          "heading_path": "Annex 1 Glossary > Work Placement Certificate",
+          "score": 0.0164,
+          "ranks": {
+            "dense": 1
+          }
+        },
+        {
+          "source": "ubb/gdpr.pdf",
+          "page": 26,
+          "heading_path": "REGULAMENTE",
+          "score": 0.0164,
+          "ranks": {
+            "sparse": 1
+          }
+        }
+      ],
+      "ranks_by_search": {}
+    },
+    {
+      "id": "v34",
+      "type": "fact",
+      "verified": false,
+      "rank": 1,
+      "top_score": 0.03278688524590164,
+      "top": [
+        {
+          "source": "ubb/regulament_practica_ubb.html",
+          "page": null,
+          "heading_path": "Regulamentul Universității Babeș-Bolyai Cluj-Napoca privind cadrul general de organizare și desfășurare a practicii de specialitate a studenților la nivel licență și master",
+          "score": 0.0328,
+          "ranks": {
+            "dense": 1,
+            "sparse": 1
+          }
+        },
+        {
+          "source": "ubb/regulament_practica_ubb.html",
+          "page": null,
+          "heading_path": "Regulamentul Universității Babeș-Bolyai Cluj-Napoca privind cadrul general de organizare și desfășurare a practicii de specialitate a studenților la nivel licență și master",
+          "score": 0.0315,
+          "ranks": {
+            "dense": 5,
+            "sparse": 2
+          }
+        },
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 36,
+          "heading_path": "ECTS for mobility and credit recognition",
+          "score": 0.0313,
+          "ranks": {
+            "dense": 5,
+            "sparse": 3
+          }
+        },
+        {
+          "source": "ubb/regulament_practica_ubb.html",
+          "page": null,
+          "heading_path": "Regulamentul Universității Babeș-Bolyai Cluj-Napoca privind cadrul general de organizare și desfășurare a practicii de specialitate a studenților la nivel licență și master",
+          "score": 0.0312,
+          "ranks": {
+            "dense": 4,
+            "sparse": 4
+          }
+        },
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 84,
+          "heading_path": "Annex 1 Glossary > Work Placement Certificate",
+          "score": 0.0164,
+          "ranks": {
+            "dense": 1
+          }
+        }
+      ],
+      "ranks_by_search": {
+        "dense": 1,
+        "sparse": 1
+      }
+    },
+    {
+      "id": "v35",
+      "type": "fact",
+      "verified": false,
+      "rank": 3,
+      "top_score": 0.03252247488101534,
+      "top": [
+        {
+          "source": "ubb/fisa_evaluare_practica_informatica.xlsx",
+          "page": null,
+          "heading_path": "Sheet1",
+          "score": 0.0325,
+          "ranks": {
+            "dense": 1,
+            "sparse": 2
+          }
+        },
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 84,
+          "heading_path": "Annex 1 Glossary > Work Placement Certificate",
+          "score": 0.0164,
+          "ranks": {
+            "dense": 1
+          }
+        },
+        {
+          "source": "ubb/regulament_practica_ubb.html",
+          "page": null,
+          "heading_path": "Regulamentul Universității Babeș-Bolyai Cluj-Napoca privind cadrul general de organizare și desfășurare a practicii de specialitate a studenților la nivel licență și master",
+          "score": 0.0164,
+          "ranks": {
+            "sparse": 1
+          }
+        },
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 45,
+          "heading_path": "ECTS and lifelong learning",
+          "score": 0.0164,
+          "ranks": {
+            "sparse": 1
+          }
+        },
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 61,
+          "heading_path": "Acknowledgements",
+          "score": 0.0161,
+          "ranks": {
+            "dense": 2
+          }
+        }
+      ],
+      "ranks_by_search": {
+        "sparse": 1
+      }
+    },
+    {
+      "id": "v36",
+      "type": "fact",
+      "verified": false,
+      "rank": null,
+      "top_score": 0.031746031746031744,
+      "top": [
+        {
+          "source": "ubb/tematica_licenta_inteligenta_artificiala_2026.pdf",
+          "page": 1,
+          "heading_path": "Courses: Programming fundamentals, Object oriented programming, Data structures and algorithms",
+          "score": 0.0317,
+          "ranks": {
+            "dense": 3,
+            "sparse": 3
+          }
+        },
+        {
+          "source": "ubb/tematica_licenta_inteligenta_artificiala_2026.pdf",
+          "page": 1,
+          "heading_path": "June and September 2026",
+          "score": 0.0164,
+          "ranks": {
+            "dense": 1
+          }
+        },
+        {
+          "source": "ubb/programa_informatica_definitivat.pdf",
+          "page": 1,
+          "heading_path": "Programa",
+          "score": 0.0164,
+          "ranks": {
+            "dense": 1
+          }
+        },
+        {
+          "source": "ubb/programa_informatica_definitivat.pdf",
+          "page": 2,
+          "heading_path": "Programa > obținerea gradului didactic II > INFORMATICĂ",
+          "score": 0.0164,
+          "ranks": {
+            "sparse": 1
+          }
+        },
+        {
+          "source": "ubb/Convolutional_Spiking_Neural_Networks_for_Human_Action_Recognition_EN.pdf",
+          "page": 57,
+          "heading_path": "BIBLIOGRAPHY",
+          "score": 0.0164,
+          "ranks": {
+            "sparse": 1
+          }
+        }
+      ],
+      "ranks_by_search": {}
+    },
+    {
+      "id": "v37",
+      "type": "fact",
+      "verified": false,
+      "rank": 5,
+      "top_score": 0.032266458495966696,
+      "top": [
+        {
+          "source": "ubb/programa_informatica_definitivat.pdf",
+          "page": 2,
+          "heading_path": "Programa > obținerea gradului didactic II > INFORMATICĂ",
+          "score": 0.0323,
+          "ranks": {
+            "dense": 1,
+            "sparse": 3
+          }
+        },
+        {
+          "source": "ubb/tematica_licenta_inteligenta_artificiala_2026.pdf",
+          "page": 1,
+          "heading_path": "Part 1. Algorithms and Programming (1/3 of the evaluation)",
+          "score": 0.031,
+          "ranks": {
+            "dense": 4,
+            "sparse": 5
+          }
+        },
+        {
+          "source": "ubb/programa_informatica_definitivat.pdf",
+          "page": 3,
+          "heading_path": "Programa > obținerea gradului didactic II > INFORMATICĂ > pentru examenul de definitivare în învățământ",
+          "score": 0.031,
+          "ranks": {
+            "dense": 5,
+            "sparse": 4
+          }
+        },
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 84,
+          "heading_path": "Annex 1 Glossary > Work Placement Certificate",
+          "score": 0.0164,
+          "ranks": {
+            "dense": 1
+          }
+        },
+        {
+          "source": "ubb/programa_informatica_definitivat.pdf",
+          "page": 1,
+          "heading_path": "Programa > obținerea gradului didactic II > Ordinul Ministrului Educației Naționale nr. 3442 / 21.03.2000 > PROGRAMA PENTRU DEFINITIVARE ÎN ÎNVÂȚĂMÂNT, GRADE DIDACTICE ȘI",
+          "score": 0.0164,
+          "ranks": {
+            "sparse": 1
+          }
+        }
+      ],
+      "ranks_by_search": {
+        "sparse": 1
+      }
+    },
+    {
+      "id": "v38",
+      "type": "fact",
+      "verified": false,
+      "rank": 6,
+      "top_score": 0.031754032258064516,
+      "top": [
+        {
+          "source": "ubb/programa_informatica_definitivat.pdf",
+          "page": 2,
+          "heading_path": "Programa > obținerea gradului didactic II > INFORMATICĂ",
+          "score": 0.0318,
+          "ranks": {
+            "dense": 2,
+            "sparse": 4
+          }
+        },
+        {
+          "source": "ubb/tematica_licenta_inteligenta_artificiala_2026.pdf",
+          "page": 1,
+          "heading_path": "Courses: Programming fundamentals, Object oriented programming, Data structures and algorithms",
+          "score": 0.031,
+          "ranks": {
+            "dense": 4,
+            "sparse": 5
+          }
+        },
+        {
+          "source": "ubb/tematica_licenta_inteligenta_artificiala_2026.pdf",
+          "page": 1,
+          "heading_path": "June and September 2026",
+          "score": 0.0164,
+          "ranks": {
+            "dense": 1
+          }
+        },
+        {
+          "source": "ubb/programa_informatica_definitivat.pdf",
+          "page": 1,
+          "heading_path": "Programa",
+          "score": 0.0164,
+          "ranks": {
+            "dense": 1
+          }
+        },
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 40,
+          "heading_path": "ECTS for mobility and credit recognition",
+          "score": 0.0164,
+          "ranks": {
+            "sparse": 1
+          }
+        }
+      ],
+      "ranks_by_search": {
+        "sparse": 1
+      }
+    },
+    {
+      "id": "v39",
+      "type": "cross_lingual",
+      "verified": false,
+      "rank": null,
+      "top_score": 0.03225806451612903,
+      "top": [
+        {
+          "source": "ubb/tematica_licenta_inteligenta_artificiala_2026.pdf",
+          "page": 1,
+          "heading_path": "Courses: Programming fundamentals, Object oriented programming, Data structures and algorithms",
+          "score": 0.0323,
+          "ranks": {
+            "dense": 2,
+            "sparse": 2
+          }
+        },
+        {
+          "source": "ubb/Convolutional_Spiking_Neural_Networks_for_Human_Action_Recognition_EN.pdf",
+          "page": 1,
+          "heading_path": "",
+          "score": 0.0318,
+          "ranks": {
+            "dense": 5,
+            "sparse": 1
+          }
+        },
+        {
+          "source": "ubb/programa_informatica_definitivat.pdf",
+          "page": 5,
+          "heading_path": "Programa > obținerea gradului didactic II > INFORMATICĂ > Bibliografie orientativă (Universitățile în cadrul cărora se susțin examene pentru obținerea gradelor didactice pot",
+          "score": 0.0313,
+          "ranks": {
+            "dense": 5,
+            "sparse": 3
+          }
+        },
+        {
+          "source": "ubb/programa_informatica_definitivat.pdf",
+          "page": 11,
+          "heading_path": "Programa > obținerea gradului didactic II > INFORMATICĂ > Bibliografie orientativă (Universitățile în cadrul cărora se susțin examene pentru obținerea gradelor didactice pot",
+          "score": 0.0164,
+          "ranks": {
+            "dense": 1
+          }
+        },
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 84,
+          "heading_path": "Annex 1 Glossary > Work Placement Certificate",
+          "score": 0.0164,
+          "ranks": {
+            "dense": 1
+          }
+        }
+      ],
+      "ranks_by_search": {}
+    },
+    {
+      "id": "w01",
+      "type": "unanswerable",
+      "verified": false,
+      "rank": null,
+      "top_score": 0.03278688524590164,
+      "top": [
+        {
+          "source": "ubb/regulament_practica_ubb.html",
+          "page": null,
+          "heading_path": "",
+          "score": 0.0328,
+          "ranks": {
+            "dense": 1,
+            "sparse": 1
+          }
+        },
+        {
+          "source": "ubb/tematica_licenta_inteligenta_artificiala_2026.pdf",
+          "page": 1,
+          "heading_path": "Part 1. Algorithms and Programming (1/3 of the evaluation)",
+          "score": 0.0164,
+          "ranks": {
+            "dense": 1
+          }
+        },
+        {
+          "source": "ubb/Convolutional_Spiking_Neural_Networks_for_Human_Action_Recognition_EN.pdf",
+          "page": 57,
+          "heading_path": "BIBLIOGRAPHY",
+          "score": 0.0164,
+          "ranks": {
+            "sparse": 1
+          }
+        },
+        {
+          "source": "ubb/tematica_licenta_informatica_2026.pdf",
+          "page": 1,
+          "heading_path": "Specializarea Informatică > Partea 1. Algoritmică și programare",
+          "score": 0.0161,
+          "ranks": {
+            "dense": 2
+          }
+        },
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 84,
+          "heading_path": "Annex 1 Glossary > Work Placement Certificate",
+          "score": 0.0161,
+          "ranks": {
+            "dense": 2
+          }
+        }
+      ],
+      "ranks_by_search": {}
+    },
+    {
+      "id": "w02",
+      "type": "fact",
+      "verified": false,
+      "rank": null,
+      "top_score": 0.03177805800756621,
+      "top": [
+        {
+          "source": "ubb/regulament_practica_ubb.html",
+          "page": null,
+          "heading_path": "Regulamentul Universității Babeș-Bolyai Cluj-Napoca privind cadrul general de organizare și desfășurare a practicii de specialitate a studenților la nivel licență și master",
+          "score": 0.0318,
+          "ranks": {
+            "dense": 1,
+            "sparse": 5
+          }
+        },
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 84,
+          "heading_path": "Annex 1 Glossary > Work Placement Certificate",
+          "score": 0.0164,
+          "ranks": {
+            "dense": 1
+          }
+        },
+        {
+          "source": "ubb/regulament_practica_ubb.html",
+          "page": null,
+          "heading_path": "Regulamentul Universității Babeș-Bolyai Cluj-Napoca privind cadrul general de organizare și desfășurare a practicii de specialitate a studenților la nivel licență și master",
+          "score": 0.0164,
+          "ranks": {
+            "sparse": 1
+          }
+        },
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 45,
+          "heading_path": "ECTS and lifelong learning",
+          "score": 0.0164,
+          "ranks": {
+            "sparse": 1
+          }
+        },
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 61,
+          "heading_path": "Acknowledgements",
+          "score": 0.0161,
+          "ranks": {
+            "dense": 2
+          }
+        }
+      ],
+      "ranks_by_search": {}
+    },
+    {
+      "id": "w03",
+      "type": "unanswerable",
+      "verified": false,
+      "rank": null,
+      "top_score": 0.03278688524590164,
+      "top": [
+        {
+          "source": "ubb/ghid_finalizare_studii_2026.docx",
+          "page": null,
+          "heading_path": "",
+          "score": 0.0328,
+          "ranks": {
+            "dense": 1,
+            "sparse": 1
+          }
+        },
+        {
+          "source": "ubb/regulament_activitate_profesionala.pdf",
+          "page": 7,
+          "heading_path": "CAP. IV. FRECVENȚA LA ACTIVITATEA DIDACTICĂ, OBȚINEREA CREDITELOR ȘI PROMOVAREA",
+          "score": 0.0318,
+          "ranks": {
+            "dense": 4,
+            "sparse": 2
+          }
+        },
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 86,
+          "heading_path": "Annex 1 Glossary > Work Placement Certificate",
+          "score": 0.0164,
+          "ranks": {
+            "dense": 1
+          }
+        },
+        {
+          "source": "ubb/Convolutional_Spiking_Neural_Networks_for_Human_Action_Recognition_EN.pdf",
+          "page": 57,
+          "heading_path": "BIBLIOGRAPHY",
+          "score": 0.0164,
+          "ranks": {
+            "sparse": 1
+          }
+        },
+        {
+          "source": "ubb/regulament_activitate_profesionala.pdf",
+          "page": 4,
+          "heading_path": "CAP. IV. FRECVENȚA LA ACTIVITATEA DIDACTICĂ, OBȚINEREA CREDITELOR ȘI PROMOVAREA",
+          "score": 0.0161,
+          "ranks": {
+            "dense": 2
+          }
+        }
+      ],
+      "ranks_by_search": {}
+    },
+    {
+      "id": "w04",
+      "type": "unanswerable",
+      "verified": false,
+      "rank": null,
+      "top_score": 0.0315136476426799,
+      "top": [
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 30,
+          "heading_path": "ECTS for mobility and credit recognition",
+          "score": 0.0315,
+          "ranks": {
+            "dense": 2,
+            "sparse": 5
+          }
+        },
+        {
+          "source": "ubb/regulament_practica_ubb.html",
+          "page": null,
+          "heading_path": "",
+          "score": 0.0164,
+          "ranks": {
+            "dense": 1
+          }
+        },
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 10,
+          "heading_path": "ECTS key features",
+          "score": 0.0164,
+          "ranks": {
+            "dense": 1
+          }
+        },
+        {
+          "source": "ubb/regulament_activitate_profesionala.pdf",
+          "page": 1,
+          "heading_path": "CAP. I. DISPOZIȚII GENERALE",
+          "score": 0.0164,
+          "ranks": {
+            "sparse": 1
+          }
+        },
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 27,
+          "heading_path": "ECTS key features",
+          "score": 0.0164,
+          "ranks": {
+            "sparse": 1
+          }
+        }
+      ],
+      "ranks_by_search": {}
+    },
+    {
+      "id": "w05",
+      "type": "unanswerable",
+      "verified": false,
+      "rank": null,
+      "top_score": 0.03278688524590164,
+      "top": [
+        {
+          "source": "ubb/tematica_licenta_inteligenta_artificiala_2026.pdf",
+          "page": 1,
+          "heading_path": "Part 1. Algorithms and Programming (1/3 of the evaluation)",
+          "score": 0.0328,
+          "ranks": {
+            "dense": 1,
+            "sparse": 1
+          }
+        },
+        {
+          "source": "ubb/regulament_practica_ubb.html",
+          "page": null,
+          "heading_path": "",
+          "score": 0.0323,
+          "ranks": {
+            "dense": 2,
+            "sparse": 2
+          }
+        },
+        {
+          "source": "ubb/tematica_licenta_inteligenta_artificiala_2026.pdf",
+          "page": 1,
+          "heading_path": "Note",
+          "score": 0.0313,
+          "ranks": {
+            "dense": 5,
+            "sparse": 3
+          }
+        },
+        {
+          "source": "ubb/tematica_licenta_informatica_2026.pdf",
+          "page": 1,
+          "heading_path": "Specializarea Informatică > Partea 1. Algoritmică și programare",
+          "score": 0.0164,
+          "ranks": {
+            "dense": 1
+          }
+        },
+        {
+          "source": "ubb/regulament_activitate_profesionala.pdf",
+          "page": 14,
+          "heading_path": "CAP. VIII. IERARHIZAREA ANUALĂ A STUDENȚILOR",
+          "score": 0.0164,
+          "ranks": {
+            "sparse": 1
+          }
+        }
+      ],
+      "ranks_by_search": {}
+    }
+  ],
+  "questions_file": "data/eval/test2_questions.jsonl",
+  "seconds": 4.6
+}

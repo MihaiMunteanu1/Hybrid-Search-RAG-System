@@ -1,0 +1,1285 @@
+{
+  "strategy": "structure",
+  "mode": "hybrid",
+  "per_language": true,
+  "rerank": true,
+  "list_k": 5,
+  "candidates": 20,
+  "verified": 0,
+  "total": 18,
+  "overall": {
+    "n": 18,
+    "recall@1": {
+      "found": 15,
+      "value": 0.8333333333333334,
+      "ci95": [
+        0.6077750036164076,
+        0.9416352959953425
+      ]
+    },
+    "recall@3": {
+      "found": 17,
+      "value": 0.9444444444444444,
+      "ci95": [
+        0.7424220019799247,
+        0.9901250641690756
+      ]
+    },
+    "recall@5": {
+      "found": 17,
+      "value": 0.9444444444444444,
+      "ci95": [
+        0.7424220019799247,
+        0.9901250641690756
+      ]
+    },
+    "recall@10": {
+      "found": 17,
+      "value": 0.9444444444444444,
+      "ci95": [
+        0.7424220019799247,
+        0.9901250641690756
+      ]
+    },
+    "mrr": 0.8703703703703703
+  },
+  "by_type": {
+    "table": {
+      "n": 18,
+      "recall@1": {
+        "found": 15,
+        "value": 0.8333333333333334,
+        "ci95": [
+          0.6077750036164076,
+          0.9416352959953425
+        ]
+      },
+      "recall@3": {
+        "found": 17,
+        "value": 0.9444444444444444,
+        "ci95": [
+          0.7424220019799247,
+          0.9901250641690756
+        ]
+      },
+      "recall@5": {
+        "found": 17,
+        "value": 0.9444444444444444,
+        "ci95": [
+          0.7424220019799247,
+          0.9901250641690756
+        ]
+      },
+      "recall@10": {
+        "found": 17,
+        "value": 0.9444444444444444,
+        "ci95": [
+          0.7424220019799247,
+          0.9901250641690756
+        ]
+      },
+      "mrr": 0.8703703703703703
+    }
+  },
+  "unanswerable_top_scores": [],
+  "answerable_top_scores": [
+    -2.5804131031036377,
+    -0.5405738949775696,
+    -0.4374828338623047,
+    -0.04020161181688309,
+    0.12947160005569458,
+    0.49015653133392334,
+    0.9353484511375427,
+    1.078577995300293,
+    2.5352351665496826,
+    3.1915018558502197,
+    3.437828302383423,
+    3.515247106552124,
+    3.814567804336548,
+    3.938673257827759,
+    4.568948745727539,
+    4.754621505737305,
+    6.641411304473877,
+    8.871504783630371
+  ],
+  "questions": [
+    {
+      "id": "b01",
+      "type": "table",
+      "verified": false,
+      "rank": 1,
+      "top_score": 3.814567804336548,
+      "top": [
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 8,
+          "heading_path": "Modificat și completat prin HS nr. 146/25.09.2025-",
+          "score": 3.8146,
+          "ranks": {
+            "dense": 1,
+            "sparse": 1,
+            "fused": 1
+          }
+        },
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 9,
+          "heading_path": "Modificat și completat prin HS nr. 146/25.09.2025-",
+          "score": 0.6752,
+          "ranks": {
+            "dense": 2,
+            "fused": 5
+          }
+        },
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 39,
+          "heading_path": "Criterii pentru evaluarea dosarelor de bursă specială pentru activitatea științifică",
+          "score": -1.7822,
+          "ranks": {
+            "dense": 5,
+            "fused": 16
+          }
+        },
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 39,
+          "heading_path": "Criterii pentru evaluarea dosarelor de bursă specială pentru activitatea științifică",
+          "score": -2.4963,
+          "ranks": {
+            "dense": 3,
+            "sparse": 3,
+            "fused": 2
+          }
+        },
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 9,
+          "heading_path": "ECTS key features",
+          "score": -3.88,
+          "ranks": {
+            "dense": 2,
+            "fused": 6
+          }
+        }
+      ],
+      "ranks_by_search": {
+        "dense": 1,
+        "sparse": 1,
+        "fused": 1
+      }
+    },
+    {
+      "id": "b02",
+      "type": "table",
+      "verified": false,
+      "rank": 1,
+      "top_score": -0.04020161181688309,
+      "top": [
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 8,
+          "heading_path": "Modificat și completat prin HS nr. 146/25.09.2025-",
+          "score": -0.0402,
+          "ranks": {
+            "dense": 2,
+            "sparse": 1,
+            "fused": 1
+          }
+        },
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 10,
+          "heading_path": "ECTS key features",
+          "score": -1.6982,
+          "ranks": {
+            "sparse": 4,
+            "fused": 14
+          }
+        },
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 20,
+          "heading_path": "ECTS key features",
+          "score": -2.4333,
+          "ranks": {
+            "sparse": 1,
+            "fused": 5
+          }
+        },
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 45,
+          "heading_path": "ECTS and lifelong learning",
+          "score": -2.5042,
+          "ranks": {
+            "dense": 4,
+            "fused": 13
+          }
+        },
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 9,
+          "heading_path": "Modificat și completat prin HS nr. 146/25.09.2025-",
+          "score": -3.5555,
+          "ranks": {
+            "dense": 3,
+            "sparse": 4,
+            "fused": 2
+          }
+        }
+      ],
+      "ranks_by_search": {
+        "dense": 2,
+        "sparse": 1,
+        "fused": 1
+      }
+    },
+    {
+      "id": "b03",
+      "type": "table",
+      "verified": false,
+      "rank": 1,
+      "top_score": 8.871504783630371,
+      "top": [
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 9,
+          "heading_path": "Modificat și completat prin HS nr. 146/25.09.2025-",
+          "score": 8.8715,
+          "ranks": {
+            "dense": 1,
+            "sparse": 2,
+            "fused": 1
+          }
+        },
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 8,
+          "heading_path": "Modificat și completat prin HS nr. 146/25.09.2025-",
+          "score": 3.201,
+          "ranks": {
+            "dense": 2,
+            "sparse": 1,
+            "fused": 2
+          }
+        },
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 10,
+          "heading_path": "Modificat și completat prin HS nr. 146/25.09.2025-",
+          "score": -0.8038,
+          "ranks": {
+            "dense": 3,
+            "fused": 8
+          }
+        },
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 3,
+          "heading_path": "Modificat și completat prin HS nr. 146/25.09.2025-",
+          "score": -2.5475,
+          "ranks": {
+            "sparse": 3,
+            "fused": 10
+          }
+        },
+        {
+          "source": "ubb/regulament_activitate_profesionala.pdf",
+          "page": 6,
+          "heading_path": "CAP. IV. FRECVENȚA LA ACTIVITATEA DIDACTICĂ, OBȚINEREA CREDITELOR ȘI PROMOVAREA",
+          "score": -3.9162,
+          "ranks": {
+            "sparse": 4,
+            "fused": 13
+          }
+        }
+      ],
+      "ranks_by_search": {
+        "dense": 1,
+        "sparse": 2,
+        "fused": 1
+      }
+    },
+    {
+      "id": "b04",
+      "type": "table",
+      "verified": false,
+      "rank": 1,
+      "top_score": 1.078577995300293,
+      "top": [
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 8,
+          "heading_path": "Modificat și completat prin HS nr. 146/25.09.2025-",
+          "score": 1.0786,
+          "ranks": {
+            "dense": 1,
+            "sparse": 1,
+            "fused": 1
+          }
+        },
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 9,
+          "heading_path": "Modificat și completat prin HS nr. 146/25.09.2025-",
+          "score": -0.7277,
+          "ranks": {
+            "dense": 2,
+            "sparse": 2,
+            "fused": 2
+          }
+        },
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 20,
+          "heading_path": "ECTS key features",
+          "score": -1.3519,
+          "ranks": {
+            "sparse": 1,
+            "fused": 5
+          }
+        },
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 10,
+          "heading_path": "ECTS key features",
+          "score": -1.4366,
+          "ranks": {
+            "sparse": 4,
+            "fused": 14
+          }
+        },
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 48,
+          "heading_path": "ECTS and lifelong learning",
+          "score": -2.6829,
+          "ranks": {
+            "dense": 1,
+            "fused": 4
+          }
+        }
+      ],
+      "ranks_by_search": {
+        "dense": 1,
+        "sparse": 1,
+        "fused": 1
+      }
+    },
+    {
+      "id": "b05",
+      "type": "table",
+      "verified": false,
+      "rank": 1,
+      "top_score": 3.1915018558502197,
+      "top": [
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 23,
+          "heading_path": "Modificat și completat prin HS nr. 146/25.09.2025-",
+          "score": 3.1915,
+          "ranks": {
+            "dense": 1,
+            "sparse": 2,
+            "fused": 1
+          }
+        },
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 22,
+          "heading_path": "Modificat și completat prin HS nr. 146/25.09.2025-",
+          "score": 0.8456,
+          "ranks": {
+            "dense": 2,
+            "sparse": 1,
+            "fused": 2
+          }
+        },
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 8,
+          "heading_path": "Modificat și completat prin HS nr. 146/25.09.2025-",
+          "score": -4.546,
+          "ranks": {
+            "dense": 3,
+            "fused": 8
+          }
+        },
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 10,
+          "heading_path": "ECTS key features",
+          "score": -6.5944,
+          "ranks": {
+            "dense": 5,
+            "fused": 16
+          }
+        },
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 4,
+          "heading_path": "Modificat și completat prin HS nr. 146/25.09.2025-",
+          "score": -7.1846,
+          "ranks": {
+            "dense": 5,
+            "fused": 15
+          }
+        }
+      ],
+      "ranks_by_search": {
+        "dense": 1,
+        "sparse": 2,
+        "fused": 1
+      }
+    },
+    {
+      "id": "b06",
+      "type": "table",
+      "verified": false,
+      "rank": 1,
+      "top_score": -2.5804131031036377,
+      "top": [
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 23,
+          "heading_path": "Modificat și completat prin HS nr. 146/25.09.2025-",
+          "score": -2.5804,
+          "ranks": {
+            "sparse": 5,
+            "fused": 19
+          }
+        },
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 20,
+          "heading_path": "ECTS key features",
+          "score": -3.235,
+          "ranks": {
+            "sparse": 1,
+            "fused": 3
+          }
+        },
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 22,
+          "heading_path": "Modificat și completat prin HS nr. 146/25.09.2025-",
+          "score": -3.7877,
+          "ranks": {
+            "dense": 1,
+            "sparse": 1,
+            "fused": 1
+          }
+        },
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 19,
+          "heading_path": "ECTS key features",
+          "score": -3.7929,
+          "ranks": {
+            "sparse": 3,
+            "fused": 11
+          }
+        },
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 8,
+          "heading_path": "Modificat și completat prin HS nr. 146/25.09.2025-",
+          "score": -4.0683,
+          "ranks": {
+            "dense": 2,
+            "fused": 5
+          }
+        }
+      ],
+      "ranks_by_search": {
+        "sparse": 5,
+        "fused": 19
+      }
+    },
+    {
+      "id": "b07",
+      "type": "table",
+      "verified": false,
+      "rank": 3,
+      "top_score": -0.4374828338623047,
+      "top": [
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 44,
+          "heading_path": "100 puncte",
+          "score": -0.4375,
+          "ranks": {
+            "dense": 2,
+            "fused": 6
+          }
+        },
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 9,
+          "heading_path": "Modificat și completat prin HS nr. 146/25.09.2025-",
+          "score": -0.8267,
+          "ranks": {
+            "sparse": 5,
+            "fused": 17
+          }
+        },
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 22,
+          "heading_path": "Modificat și completat prin HS nr. 146/25.09.2025-",
+          "score": -1.3305,
+          "ranks": {
+            "dense": 1,
+            "sparse": 1,
+            "fused": 1
+          }
+        },
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 48,
+          "heading_path": "ECTS and lifelong learning",
+          "score": -3.5595,
+          "ranks": {
+            "dense": 4,
+            "fused": 12
+          }
+        },
+        {
+          "source": "ubb/fisa_evaluare_practica_informatica.xlsx",
+          "page": null,
+          "heading_path": "Sheet1",
+          "score": -3.6335,
+          "ranks": {
+            "dense": 4,
+            "fused": 11
+          }
+        }
+      ],
+      "ranks_by_search": {
+        "dense": 1,
+        "sparse": 1,
+        "fused": 1
+      }
+    },
+    {
+      "id": "b08",
+      "type": "table",
+      "verified": false,
+      "rank": 1,
+      "top_score": 4.754621505737305,
+      "top": [
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 31,
+          "heading_path": "Cuantumurile burselor și sursele de finanțare aferente",
+          "score": 4.7546,
+          "ranks": {
+            "dense": 3,
+            "fused": 10
+          }
+        },
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 10,
+          "heading_path": "Modificat și completat prin HS nr. 146/25.09.2025-",
+          "score": 1.0002,
+          "ranks": {
+            "dense": 1,
+            "sparse": 2,
+            "fused": 1
+          }
+        },
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 10,
+          "heading_path": "Modificat și completat prin HS nr. 146/25.09.2025-",
+          "score": -0.3893,
+          "ranks": {
+            "dense": 2,
+            "sparse": 1,
+            "fused": 2
+          }
+        },
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 5,
+          "heading_path": "Modificat și completat prin HS nr. 146/25.09.2025-",
+          "score": -0.8323,
+          "ranks": {
+            "sparse": 5,
+            "fused": 15
+          }
+        },
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 9,
+          "heading_path": "Modificat și completat prin HS nr. 146/25.09.2025-",
+          "score": -1.5816,
+          "ranks": {
+            "dense": 4,
+            "sparse": 4,
+            "fused": 4
+          }
+        }
+      ],
+      "ranks_by_search": {
+        "dense": 3,
+        "fused": 10
+      }
+    },
+    {
+      "id": "b09",
+      "type": "table",
+      "verified": false,
+      "rank": 1,
+      "top_score": 4.568948745727539,
+      "top": [
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 31,
+          "heading_path": "Cuantumurile burselor și sursele de finanțare aferente",
+          "score": 4.5689,
+          "ranks": {
+            "sparse": 2,
+            "fused": 8
+          }
+        },
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 23,
+          "heading_path": "Modificat și completat prin HS nr. 146/25.09.2025-",
+          "score": 1.2092,
+          "ranks": {
+            "sparse": 1,
+            "fused": 5
+          }
+        },
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 24,
+          "heading_path": "Modificat și completat prin HS nr. 146/25.09.2025-",
+          "score": 0.3199,
+          "ranks": {
+            "sparse": 3,
+            "fused": 11
+          }
+        },
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 41,
+          "heading_path": "A. Definire",
+          "score": 0.0969,
+          "ranks": {
+            "dense": 2,
+            "sparse": 5,
+            "fused": 1
+          }
+        },
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 44,
+          "heading_path": "Anexa nr. 6.1",
+          "score": -0.1613,
+          "ranks": {
+            "dense": 1,
+            "fused": 3
+          }
+        }
+      ],
+      "ranks_by_search": {
+        "sparse": 2,
+        "fused": 8
+      }
+    },
+    {
+      "id": "b10",
+      "type": "table",
+      "verified": false,
+      "rank": 1,
+      "top_score": 3.437828302383423,
+      "top": [
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 31,
+          "heading_path": "Cuantumurile burselor și sursele de finanțare aferente",
+          "score": 3.4378,
+          "ranks": {
+            "dense": 1,
+            "sparse": 1,
+            "fused": 1
+          }
+        },
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 14,
+          "heading_path": "Modificat și completat prin HS nr. 146/25.09.2025-",
+          "score": 0.4038,
+          "ranks": {
+            "dense": 3,
+            "sparse": 2,
+            "fused": 2
+          }
+        },
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 31,
+          "heading_path": "Cuantumurile burselor și sursele de finanțare aferente",
+          "score": -1.187,
+          "ranks": {
+            "dense": 4,
+            "sparse": 3,
+            "fused": 4
+          }
+        },
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 13,
+          "heading_path": "Modificat și completat prin HS nr. 146/25.09.2025-",
+          "score": -1.675,
+          "ranks": {
+            "dense": 2,
+            "sparse": 4,
+            "fused": 3
+          }
+        },
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 14,
+          "heading_path": "Modificat și completat prin HS nr. 146/25.09.2025-",
+          "score": -2.408,
+          "ranks": {
+            "dense": 5,
+            "fused": 14
+          }
+        }
+      ],
+      "ranks_by_search": {
+        "dense": 1,
+        "sparse": 1,
+        "fused": 1
+      }
+    },
+    {
+      "id": "b11",
+      "type": "table",
+      "verified": false,
+      "rank": 1,
+      "top_score": 2.5352351665496826,
+      "top": [
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 31,
+          "heading_path": "Cuantumurile burselor și sursele de finanțare aferente",
+          "score": 2.5352,
+          "ranks": {
+            "dense": 3,
+            "sparse": 1,
+            "fused": 2
+          }
+        },
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 3,
+          "heading_path": "Modificat și completat prin HS nr. 146/25.09.2025-",
+          "score": 0.4739,
+          "ranks": {
+            "sparse": 4,
+            "fused": 15
+          }
+        },
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 3,
+          "heading_path": "Modificat și completat prin HS nr. 146/25.09.2025-",
+          "score": -0.9738,
+          "ranks": {
+            "dense": 4,
+            "fused": 13
+          }
+        },
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 2,
+          "heading_path": "Modificat și completat prin HS nr. 146/25.09.2025-",
+          "score": -1.1702,
+          "ranks": {
+            "dense": 5,
+            "sparse": 5,
+            "fused": 3
+          }
+        },
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 11,
+          "heading_path": "Modificat și completat prin HS nr. 146/25.09.2025-",
+          "score": -1.696,
+          "ranks": {
+            "dense": 1,
+            "sparse": 2,
+            "fused": 1
+          }
+        }
+      ],
+      "ranks_by_search": {
+        "dense": 3,
+        "sparse": 1,
+        "fused": 2
+      }
+    },
+    {
+      "id": "f01",
+      "type": "table",
+      "verified": false,
+      "rank": 1,
+      "top_score": 0.9353484511375427,
+      "top": [
+        {
+          "source": "ubb/fisa_disciplinei_practica_informatica.pdf",
+          "page": 1,
+          "heading_path": "2. Date despre disciplină",
+          "score": 0.9353,
+          "ranks": {
+            "dense": 1,
+            "sparse": 1,
+            "fused": 1
+          }
+        },
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 10,
+          "heading_path": "ECTS key features",
+          "score": 0.2719,
+          "ranks": {
+            "sparse": 1,
+            "fused": 4
+          }
+        },
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 77,
+          "heading_path": "Annex 1 Glossary > Transcript of Records",
+          "score": -1.4973,
+          "ranks": {
+            "dense": 4,
+            "sparse": 5,
+            "fused": 2
+          }
+        },
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 102,
+          "heading_path": "Annex 1 Glossary > Work Placement Certificate",
+          "score": -1.5697,
+          "ranks": {
+            "sparse": 2,
+            "fused": 8
+          }
+        },
+        {
+          "source": "ubb/regulament_activitate_profesionala.pdf",
+          "page": 4,
+          "heading_path": "CAP. IV. FRECVENȚA LA ACTIVITATEA DIDACTICĂ, OBȚINEREA CREDITELOR ȘI PROMOVAREA",
+          "score": -3.0105,
+          "ranks": {
+            "sparse": 5,
+            "fused": 18
+          }
+        }
+      ],
+      "ranks_by_search": {
+        "dense": 1,
+        "sparse": 1,
+        "fused": 1
+      }
+    },
+    {
+      "id": "f02",
+      "type": "table",
+      "verified": false,
+      "rank": 1,
+      "top_score": 0.12947160005569458,
+      "top": [
+        {
+          "source": "ubb/fisa_disciplinei_practica_informatica.pdf",
+          "page": 1,
+          "heading_path": "2. Date despre disciplină",
+          "score": 0.1295,
+          "ranks": {
+            "dense": 1,
+            "sparse": 1,
+            "fused": 1
+          }
+        },
+        {
+          "source": "ubb/regulament_practica_ubb.html",
+          "page": null,
+          "heading_path": "Regulamentul Universității Babeș-Bolyai Cluj-Napoca privind cadrul general de organizare și desfășurare a practicii de specialitate a studenților la nivel licență și master",
+          "score": -0.4329,
+          "ranks": {
+            "sparse": 4,
+            "fused": 14
+          }
+        },
+        {
+          "source": "ubb/fisa_disciplinei_practica_informatica.pdf",
+          "page": 4,
+          "heading_path": "10. Evaluare",
+          "score": -0.7262,
+          "ranks": {
+            "dense": 4,
+            "fused": 11
+          }
+        },
+        {
+          "source": "ubb/fisa_evaluare_practica_informatica.xlsx",
+          "page": null,
+          "heading_path": "Sheet1",
+          "score": -1.2361,
+          "ranks": {
+            "dense": 3,
+            "fused": 8
+          }
+        },
+        {
+          "source": "ubb/internship_agreement_model.docx",
+          "page": null,
+          "heading_path": "Article 3 - Traineeship terms and conditions",
+          "score": -1.4349,
+          "ranks": {
+            "dense": 2,
+            "sparse": 1,
+            "fused": 2
+          }
+        }
+      ],
+      "ranks_by_search": {
+        "dense": 1,
+        "sparse": 1,
+        "fused": 1
+      }
+    },
+    {
+      "id": "f03",
+      "type": "table",
+      "verified": false,
+      "rank": 1,
+      "top_score": 3.938673257827759,
+      "top": [
+        {
+          "source": "ubb/fisa_disciplinei_practica_informatica.pdf",
+          "page": 4,
+          "heading_path": "10. Evaluare",
+          "score": 3.9387,
+          "ranks": {
+            "dense": 2,
+            "sparse": 1,
+            "fused": 1
+          }
+        },
+        {
+          "source": "ubb/fisa_evaluare_practica_informatica.xlsx",
+          "page": null,
+          "heading_path": "Sheet1",
+          "score": 2.0213,
+          "ranks": {
+            "dense": 1,
+            "sparse": 4,
+            "fused": 2
+          }
+        },
+        {
+          "source": "ubb/regulament_activitate_profesionala.pdf",
+          "page": 5,
+          "heading_path": "CAP. IV. FRECVENȚA LA ACTIVITATEA DIDACTICĂ, OBȚINEREA CREDITELOR ȘI PROMOVAREA",
+          "score": 0.163,
+          "ranks": {
+            "sparse": 5,
+            "fused": 15
+          }
+        },
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 93,
+          "heading_path": "Annex 1 Glossary > Work Placement Certificate",
+          "score": -1.0136,
+          "ranks": {
+            "sparse": 3,
+            "fused": 10
+          }
+        },
+        {
+          "source": "ubb/regulament_practica_ubb.html",
+          "page": null,
+          "heading_path": "Regulamentul Universității Babeș-Bolyai Cluj-Napoca privind cadrul general de organizare și desfășurare a practicii de specialitate a studenților la nivel licență și master",
+          "score": -1.2375,
+          "ranks": {
+            "sparse": 2,
+            "fused": 9
+          }
+        }
+      ],
+      "ranks_by_search": {
+        "dense": 2,
+        "sparse": 1,
+        "fused": 1
+      }
+    },
+    {
+      "id": "f04",
+      "type": "table",
+      "verified": false,
+      "rank": null,
+      "top_score": -0.5405738949775696,
+      "top": [
+        {
+          "source": "ubb/tematica_licenta_informatica_2026.pdf",
+          "page": 1,
+          "heading_path": "Specializarea Informatică > Partea 1. Algoritmică și programare",
+          "score": -0.5406,
+          "ranks": {
+            "dense": 1,
+            "fused": 2
+          }
+        },
+        {
+          "source": "ubb/tematica_licenta_inteligenta_artificiala_2026.pdf",
+          "page": 1,
+          "heading_path": "June and September 2026",
+          "score": -1.6113,
+          "ranks": {
+            "dense": 1,
+            "fused": 1
+          }
+        },
+        {
+          "source": "ubb/regulament_activitate_profesionala.pdf",
+          "page": 6,
+          "heading_path": "CAP. IV. FRECVENȚA LA ACTIVITATEA DIDACTICĂ, OBȚINEREA CREDITELOR ȘI PROMOVAREA",
+          "score": -1.7546,
+          "ranks": {
+            "sparse": 3,
+            "fused": 11
+          }
+        },
+        {
+          "source": "ubb/programa_informatica_definitivat.pdf",
+          "page": 7,
+          "heading_path": "Programa > obținerea gradului didactic II > INFORMATICĂ > COMPETENȚE SPECIFICE",
+          "score": -1.777,
+          "ranks": {
+            "dense": 2,
+            "fused": 6
+          }
+        },
+        {
+          "source": "ubb/regulament_activitate_profesionala.pdf",
+          "page": 4,
+          "heading_path": "CAP. IV. FRECVENȚA LA ACTIVITATEA DIDACTICĂ, OBȚINEREA CREDITELOR ȘI PROMOVAREA",
+          "score": -2.1809,
+          "ranks": {
+            "sparse": 1,
+            "fused": 4
+          }
+        }
+      ],
+      "ranks_by_search": {}
+    },
+    {
+      "id": "e01",
+      "type": "table",
+      "verified": false,
+      "rank": 1,
+      "top_score": 6.641411304473877,
+      "top": [
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 41,
+          "heading_path": "ECTS for mobility and credit recognition",
+          "score": 6.6414,
+          "ranks": {
+            "dense": 1,
+            "sparse": 1,
+            "fused": 1
+          }
+        },
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 77,
+          "heading_path": "Annex 1 Glossary > Work Placement Certificate",
+          "score": 1.2171,
+          "ranks": {
+            "sparse": 3,
+            "fused": 11
+          }
+        },
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 40,
+          "heading_path": "ECTS for mobility and credit recognition",
+          "score": -0.8176,
+          "ranks": {
+            "dense": 2,
+            "sparse": 2,
+            "fused": 2
+          }
+        },
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 38,
+          "heading_path": "ECTS for mobility and credit recognition",
+          "score": -2.9891,
+          "ranks": {
+            "dense": 3,
+            "sparse": 4,
+            "fused": 3
+          }
+        },
+        {
+          "source": "ubb/fisa_evaluare_practica_informatica.xlsx",
+          "page": null,
+          "heading_path": "Sheet1",
+          "score": -3.174,
+          "ranks": {
+            "dense": 1,
+            "fused": 5
+          }
+        }
+      ],
+      "ranks_by_search": {
+        "dense": 1,
+        "sparse": 1,
+        "fused": 1
+      }
+    },
+    {
+      "id": "e02",
+      "type": "table",
+      "verified": false,
+      "rank": 1,
+      "top_score": 3.515247106552124,
+      "top": [
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 41,
+          "heading_path": "ECTS for mobility and credit recognition",
+          "score": 3.5152,
+          "ranks": {
+            "dense": 1,
+            "fused": 2
+          }
+        },
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 40,
+          "heading_path": "ECTS for mobility and credit recognition",
+          "score": -0.6584,
+          "ranks": {
+            "dense": 2,
+            "fused": 6
+          }
+        },
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 20,
+          "heading_path": "ECTS key features",
+          "score": -1.4268,
+          "ranks": {
+            "sparse": 3,
+            "fused": 12
+          }
+        },
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 48,
+          "heading_path": "ECTS and lifelong learning",
+          "score": -1.758,
+          "ranks": {
+            "dense": 5,
+            "fused": 18
+          }
+        },
+        {
+          "source": "ubb/referat_coordonator.docx",
+          "page": null,
+          "heading_path": "Facultatea de Matematică și Informatică",
+          "score": -2.8786,
+          "ranks": {
+            "sparse": 3,
+            "fused": 11
+          }
+        }
+      ],
+      "ranks_by_search": {
+        "dense": 1,
+        "fused": 2
+      }
+    },
+    {
+      "id": "c01",
+      "type": "table",
+      "verified": false,
+      "rank": 3,
+      "top_score": 0.49015653133392334,
+      "top": [
+        {
+          "source": "ubb/Convolutional_Spiking_Neural_Networks_for_Human_Action_Recognition_EN.pdf",
+          "page": 47,
+          "heading_path": "Experiments and Evaluation > CSNN Results: Guided vs. Random Sampling Study > CSNN Confusion Matrix",
+          "score": 0.4902,
+          "ranks": {
+            "dense": 1,
+            "fused": 2
+          }
+        },
+        {
+          "source": "ubb/Convolutional_Spiking_Neural_Networks_for_Human_Action_Recognition_EN.pdf",
+          "page": 46,
+          "heading_path": "Experiments and Evaluation > CSNN Results: Guided vs. Random Sampling Study > CSNN Confusion Matrix",
+          "score": 0.0965,
+          "ranks": {
+            "dense": 2,
+            "sparse": 5,
+            "fused": 1
+          }
+        },
+        {
+          "source": "ubb/Convolutional_Spiking_Neural_Networks_for_Human_Action_Recognition_EN.pdf",
+          "page": 43,
+          "heading_path": "Experiments and Evaluation > CNN Results",
+          "score": -0.3432,
+          "ranks": {
+            "dense": 3,
+            "fused": 9
+          }
+        },
+        {
+          "source": "ubb/Convolutional_Spiking_Neural_Networks_for_Human_Action_Recognition_EN.pdf",
+          "page": 9,
+          "heading_path": "Bibliography",
+          "score": -0.9082,
+          "ranks": {
+            "dense": 5,
+            "fused": 17
+          }
+        },
+        {
+          "source": "ubb/Convolutional_Spiking_Neural_Networks_for_Human_Action_Recognition_EN.pdf",
+          "page": 42,
+          "heading_path": "Experiments and Evaluation > CNN Results",
+          "score": -1.7434,
+          "ranks": {
+            "dense": 4,
+            "fused": 13
+          }
+        }
+      ],
+      "ranks_by_search": {
+        "dense": 3,
+        "fused": 9
+      }
+    }
+  ],
+  "questions_file": "data/eval/table_questions.jsonl",
+  "seconds": 82.1
+}

@@ -1,0 +1,54 @@
+# The app and its language model, each in its own container:
+#
+#   docker compose up --build        -> http://localhost:8000
+#
+# Mounted, not copied into an image: the model file (RAG_MODEL in .env, default
+# ./models/Qwen3.5-4B-Q4_K_M.gguf) and data/ (documents, index, evaluation files).
+services:
+  # The official llama.cpp server image, pinned to a build close to the one the evaluation
+  # was run with (b10938). On a machine with an NVIDIA GPU, use server-cuda-b10951.
+  llm:
+    image: ghcr.io/ggml-org/llama.cpp:server-b10951
+    volumes:
+      - ${RAG_MODEL:-./models/Qwen3.5-4B-Q4_K_M.gguf}:/models/model.gguf:ro
+    # --alias is the model name shown in the interface; change it with the model.
+    # Threads come from .env (LLAMA_THREADS, LLAMA_THREADS_BATCH); -1 lets llama.cpp choose.
+    command: >
+      --model /models/model.gguf
+      --alias Qwen3.5-4B-Q4_K_M.gguf
+      --host 0.0.0.0 --port 8080
+      --ctx-size 8192
+      --batch-size 256
+      --ubatch-size 256
+      --parallel 1
+      --threads ${LLAMA_THREADS:--1}
+      --threads-batch ${LLAMA_THREADS_BATCH:--1}
+    # No published port: llama-server has no authentication, so only the app can reach it.
+    expose:
+      - "8080"
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://localhost:8080/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      # Loading the model from a Windows bind mount can take several minutes the first time.
+      start_period: 900s
+    restart: unless-stopped
+
+  app:
+    build: .
+    volumes:
+      # Not read-only: uploads are written here, and Qdrant takes a lock file in the index.
+      - ./data:/data
+    ports:
+      - "${RAG_PORT:-8000}:8000"
+    depends_on:
+      llm:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "python", "-c", "import httpx; httpx.get('http://127.0.0.1:8000/api/status').raise_for_status()"]
+      interval: 15s
+      timeout: 10s
+      retries: 10
+      start_period: 120s
+    restart: unless-stopped

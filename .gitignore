@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+
+# Local settings
+.env
+
+# Editors
+.idea/
+.vscode/
+
+# Models: large files, downloaded separately (see README)
+models/
+*.gguf
+
+# Data. The corpus documents have no explicit redistribution license; indexes,
+# processed text and logs are rebuilt locally.
+# The evaluation sets and results in data/eval/ are committed.
+data/raw/
+data/processed/
+data/processed.backup/
+data/index/
+data/logs/
+data/beir/
+
+# Working notes
+HANDOFF.md
+
+# Kept locally, not published
+paper/
+docs/GHID.md
+data/eval/RESULTS.md
+data/SOURCES.md

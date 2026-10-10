@@ -1,0 +1,1776 @@
+{
+  "strategy": "structure",
+  "mode": "dense",
+  "per_language": false,
+  "rerank": true,
+  "list_k": 10,
+  "candidates": 20,
+  "verified": 0,
+  "total": 25,
+  "overall": {
+    "n": 22,
+    "recall@1": {
+      "found": 14,
+      "value": 0.6363636363636364,
+      "ci95": [
+        0.4295134934371804,
+        0.802670272273921
+      ]
+    },
+    "recall@3": {
+      "found": 17,
+      "value": 0.7727272727272727,
+      "ci95": [
+        0.5655964393704065,
+        0.8987710920517964
+      ]
+    },
+    "recall@5": {
+      "found": 17,
+      "value": 0.7727272727272727,
+      "ci95": [
+        0.5655964393704065,
+        0.8987710920517964
+      ]
+    },
+    "recall@10": {
+      "found": 17,
+      "value": 0.7727272727272727,
+      "ci95": [
+        0.5655964393704065,
+        0.8987710920517964
+      ]
+    },
+    "mrr": 0.696969696969697
+  },
+  "by_type": {
+    "cross_lingual": {
+      "n": 4,
+      "recall@1": {
+        "found": 1,
+        "value": 0.25,
+        "ci95": [
+          0.045586062644636216,
+          0.6993639475573634
+        ]
+      },
+      "recall@3": {
+        "found": 2,
+        "value": 0.5,
+        "ci95": [
+          0.15003570882017148,
+          0.8499642911798285
+        ]
+      },
+      "recall@5": {
+        "found": 2,
+        "value": 0.5,
+        "ci95": [
+          0.15003570882017148,
+          0.8499642911798285
+        ]
+      },
+      "recall@10": {
+        "found": 2,
+        "value": 0.5,
+        "ci95": [
+          0.15003570882017148,
+          0.8499642911798285
+        ]
+      },
+      "mrr": 0.375
+    },
+    "fact": {
+      "n": 10,
+      "recall@1": {
+        "found": 6,
+        "value": 0.6,
+        "ci95": [
+          0.3126695474501864,
+          0.8318224187964902
+        ]
+      },
+      "recall@3": {
+        "found": 8,
+        "value": 0.8,
+        "ci95": [
+          0.49015684672072335,
+          0.9433190520193067
+        ]
+      },
+      "recall@5": {
+        "found": 8,
+        "value": 0.8,
+        "ci95": [
+          0.49015684672072335,
+          0.9433190520193067
+        ]
+      },
+      "recall@10": {
+        "found": 8,
+        "value": 0.8,
+        "ci95": [
+          0.49015684672072335,
+          0.9433190520193067
+        ]
+      },
+      "mrr": 0.6833333333333333
+    },
+    "paraphrase": {
+      "n": 4,
+      "recall@1": {
+        "found": 4,
+        "value": 1.0,
+        "ci95": [
+          0.5100999795960008,
+          1.0
+        ]
+      },
+      "recall@3": {
+        "found": 4,
+        "value": 1.0,
+        "ci95": [
+          0.5100999795960008,
+          1.0
+        ]
+      },
+      "recall@5": {
+        "found": 4,
+        "value": 1.0,
+        "ci95": [
+          0.5100999795960008,
+          1.0
+        ]
+      },
+      "recall@10": {
+        "found": 4,
+        "value": 1.0,
+        "ci95": [
+          0.5100999795960008,
+          1.0
+        ]
+      },
+      "mrr": 1.0
+    },
+    "table": {
+      "n": 4,
+      "recall@1": {
+        "found": 3,
+        "value": 0.75,
+        "ci95": [
+          0.3006360524426366,
+          0.9544139373553637
+        ]
+      },
+      "recall@3": {
+        "found": 3,
+        "value": 0.75,
+        "ci95": [
+          0.3006360524426366,
+          0.9544139373553637
+        ]
+      },
+      "recall@5": {
+        "found": 3,
+        "value": 0.75,
+        "ci95": [
+          0.3006360524426366,
+          0.9544139373553637
+        ]
+      },
+      "recall@10": {
+        "found": 3,
+        "value": 0.75,
+        "ci95": [
+          0.3006360524426366,
+          0.9544139373553637
+        ]
+      },
+      "mrr": 0.75
+    }
+  },
+  "unanswerable_top_scores": [
+    -4.163489818572998,
+    0.4782564043998718,
+    -5.598354816436768
+  ],
+  "answerable_top_scores": [
+    -1.2495267391204834,
+    -1.1025582551956177,
+    -0.801527202129364,
+    -0.22309502959251404,
+    0.48532408475875854,
+    0.7648197412490845,
+    0.9021896123886108,
+    0.90577232837677,
+    1.427440881729126,
+    1.8290762901306152,
+    2.0790445804595947,
+    3.207918167114258,
+    3.631572723388672,
+    4.031801700592041,
+    4.747308254241943,
+    6.063836574554443,
+    6.37167501449585,
+    6.89478874206543,
+    6.933447360992432,
+    7.032888889312744,
+    9.373738288879395,
+    9.410883903503418
+  ],
+  "questions": [
+    {
+      "id": "q01",
+      "type": "fact",
+      "verified": false,
+      "rank": 1,
+      "top_score": 9.410883903503418,
+      "top": [
+        {
+          "source": "ubb/regulament_activitate_profesionala.pdf",
+          "page": 4,
+          "heading_path": "CAP. IV. FRECVENȚA LA ACTIVITATEA DIDACTICĂ, OBȚINEREA CREDITELOR ȘI PROMOVAREA",
+          "score": 9.4109,
+          "ranks": {
+            "dense": 1,
+            "fused": 1
+          }
+        },
+        {
+          "source": "ubb/regulament_activitate_profesionala.pdf",
+          "page": 4,
+          "heading_path": "CAP. IV. FRECVENȚA LA ACTIVITATEA DIDACTICĂ, OBȚINEREA CREDITELOR ȘI PROMOVAREA",
+          "score": 6.1194,
+          "ranks": {
+            "dense": 4,
+            "fused": 4
+          }
+        },
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 33,
+          "heading_path": "FRECVENȚĂ REDUSĂ LA UNIVERSITATEA BABEȘ-BOLYAI",
+          "score": 6.0844,
+          "ranks": {
+            "dense": 5,
+            "fused": 5
+          }
+        },
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 4,
+          "heading_path": "Modificat și completat prin HS nr. 146/25.09.2025-",
+          "score": 5.4422,
+          "ranks": {
+            "dense": 13,
+            "fused": 13
+          }
+        },
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 3,
+          "heading_path": "Modificat și completat prin HS nr. 146/25.09.2025-",
+          "score": 5.4122,
+          "ranks": {
+            "dense": 3,
+            "fused": 3
+          }
+        }
+      ],
+      "ranks_by_search": {
+        "dense": 1,
+        "fused": 1
+      }
+    },
+    {
+      "id": "q02",
+      "type": "paraphrase",
+      "verified": false,
+      "rank": 1,
+      "top_score": -0.801527202129364,
+      "top": [
+        {
+          "source": "ubb/regulament_activitate_profesionala.pdf",
+          "page": 8,
+          "heading_path": "CAP. V. ÎNTRERUPEREA STUDIILOR, EXMATRICULAREA, REÎNMATRICULAREA, PRELUNGIREA STUDIILOR",
+          "score": -0.8015,
+          "ranks": {
+            "dense": 1,
+            "fused": 1
+          }
+        },
+        {
+          "source": "ubb/regulament_activitate_profesionala.pdf",
+          "page": 8,
+          "heading_path": "CAP. V. ÎNTRERUPEREA STUDIILOR, EXMATRICULAREA, REÎNMATRICULAREA, PRELUNGIREA STUDIILOR",
+          "score": -1.926,
+          "ranks": {
+            "dense": 2,
+            "fused": 2
+          }
+        },
+        {
+          "source": "ubb/regulament_activitate_profesionala.pdf",
+          "page": 9,
+          "heading_path": "CAP. V. ÎNTRERUPEREA STUDIILOR, EXMATRICULAREA, REÎNMATRICULAREA, PRELUNGIREA STUDIILOR",
+          "score": -2.018,
+          "ranks": {
+            "dense": 3,
+            "fused": 3
+          }
+        },
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 14,
+          "heading_path": "Sesiuni științifice/academice organizate de către UBB",
+          "score": -2.8495,
+          "ranks": {
+            "dense": 13,
+            "fused": 13
+          }
+        },
+        {
+          "source": "ubb/regulament_activitate_profesionala.pdf",
+          "page": 9,
+          "heading_path": "CAP. V. ÎNTRERUPEREA STUDIILOR, EXMATRICULAREA, REÎNMATRICULAREA, PRELUNGIREA STUDIILOR",
+          "score": -3.8202,
+          "ranks": {
+            "dense": 5,
+            "fused": 5
+          }
+        }
+      ],
+      "ranks_by_search": {
+        "dense": 1,
+        "fused": 1
+      }
+    },
+    {
+      "id": "q03",
+      "type": "paraphrase",
+      "verified": false,
+      "rank": 1,
+      "top_score": 0.90577232837677,
+      "top": [
+        {
+          "source": "ubb/regulament_activitate_profesionala.pdf",
+          "page": 5,
+          "heading_path": "CAP. IV. FRECVENȚA LA ACTIVITATEA DIDACTICĂ, OBȚINEREA CREDITELOR ȘI PROMOVAREA",
+          "score": 0.9058,
+          "ranks": {
+            "dense": 20,
+            "fused": 20
+          }
+        },
+        {
+          "source": "ubb/regulament_activitate_profesionala.pdf",
+          "page": 8,
+          "heading_path": "CAP. V. ÎNTRERUPEREA STUDIILOR, EXMATRICULAREA, REÎNMATRICULAREA, PRELUNGIREA STUDIILOR",
+          "score": -2.2808,
+          "ranks": {
+            "dense": 1,
+            "fused": 1
+          }
+        },
+        {
+          "source": "ubb/regulament_activitate_profesionala.pdf",
+          "page": 8,
+          "heading_path": "CAP. IV. FRECVENȚA LA ACTIVITATEA DIDACTICĂ, OBȚINEREA CREDITELOR ȘI PROMOVAREA",
+          "score": -2.4283,
+          "ranks": {
+            "dense": 4,
+            "fused": 4
+          }
+        },
+        {
+          "source": "ubb/regulament_activitate_profesionala.pdf",
+          "page": 8,
+          "heading_path": "CAP. V. ÎNTRERUPEREA STUDIILOR, EXMATRICULAREA, REÎNMATRICULAREA, PRELUNGIREA STUDIILOR",
+          "score": -2.8146,
+          "ranks": {
+            "dense": 3,
+            "fused": 3
+          }
+        },
+        {
+          "source": "ubb/regulament_activitate_profesionala.pdf",
+          "page": 3,
+          "heading_path": "CAP. III. DREPTURILE ȘI OBLIGAȚIILE STUDENTULUI",
+          "score": -3.1765,
+          "ranks": {
+            "dense": 5,
+            "fused": 5
+          }
+        }
+      ],
+      "ranks_by_search": {
+        "dense": 20,
+        "fused": 20
+      }
+    },
+    {
+      "id": "q04",
+      "type": "fact",
+      "verified": false,
+      "rank": 1,
+      "top_score": 6.063836574554443,
+      "top": [
+        {
+          "source": "ubb/regulament_activitate_profesionala.pdf",
+          "page": 8,
+          "heading_path": "CAP. IV. FRECVENȚA LA ACTIVITATEA DIDACTICĂ, OBȚINEREA CREDITELOR ȘI PROMOVAREA",
+          "score": 6.0638,
+          "ranks": {
+            "dense": 1,
+            "fused": 1
+          }
+        },
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 4,
+          "heading_path": "Modificat și completat prin HS nr. 146/25.09.2025-",
+          "score": -1.6678,
+          "ranks": {
+            "dense": 19,
+            "fused": 19
+          }
+        },
+        {
+          "source": "ubb/regulament_activitate_profesionala.pdf",
+          "page": 4,
+          "heading_path": "CAP. IV. FRECVENȚA LA ACTIVITATEA DIDACTICĂ, OBȚINEREA CREDITELOR ȘI PROMOVAREA",
+          "score": -2.6078,
+          "ranks": {
+            "dense": 3,
+            "fused": 3
+          }
+        },
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 33,
+          "heading_path": "FRECVENȚĂ REDUSĂ LA UNIVERSITATEA BABEȘ-BOLYAI",
+          "score": -3.0329,
+          "ranks": {
+            "dense": 4,
+            "fused": 4
+          }
+        },
+        {
+          "source": "ubb/regulament_activitate_profesionala.pdf",
+          "page": 13,
+          "heading_path": "CAP. VIII. IERARHIZAREA ANUALĂ A STUDENȚILOR",
+          "score": -3.2906,
+          "ranks": {
+            "dense": 20,
+            "fused": 20
+          }
+        }
+      ],
+      "ranks_by_search": {
+        "dense": 1,
+        "fused": 1
+      }
+    },
+    {
+      "id": "q05",
+      "type": "table",
+      "verified": false,
+      "rank": 1,
+      "top_score": 6.933447360992432,
+      "top": [
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 8,
+          "heading_path": "Articol în publicații științifice de specialitate internaționale",
+          "score": 6.9334,
+          "ranks": {
+            "dense": 1,
+            "fused": 1
+          }
+        },
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 8,
+          "heading_path": "Articol în publicații științifice de specialitate naționale",
+          "score": 3.1427,
+          "ranks": {
+            "dense": 2,
+            "fused": 2
+          }
+        },
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 8,
+          "heading_path": "Publicare cărți de specialitate",
+          "score": 1.4244,
+          "ranks": {
+            "dense": 4,
+            "fused": 4
+          }
+        },
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 9,
+          "heading_path": "Sesiuni științifice/academice organizate de către UBB",
+          "score": 0.357,
+          "ranks": {
+            "dense": 5,
+            "fused": 5
+          }
+        },
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 39,
+          "heading_path": "Criterii pentru evaluarea dosarelor de bursă specială pentru activitatea științifică",
+          "score": 0.0496,
+          "ranks": {
+            "dense": 7,
+            "fused": 7
+          }
+        }
+      ],
+      "ranks_by_search": {
+        "dense": 1,
+        "fused": 1
+      }
+    },
+    {
+      "id": "q06",
+      "type": "table",
+      "verified": false,
+      "rank": 1,
+      "top_score": 0.7648197412490845,
+      "top": [
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 23,
+          "heading_path": "Jocuri Olimpice",
+          "score": 0.7648,
+          "ranks": {
+            "dense": 1,
+            "fused": 1
+          }
+        },
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 23,
+          "heading_path": "CN Universitare/Competiții de prestigiu UBB",
+          "score": -0.8714,
+          "ranks": {
+            "dense": 5,
+            "fused": 5
+          }
+        },
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 23,
+          "heading_path": "CM, CE, C Universitare",
+          "score": -1.0361,
+          "ranks": {
+            "dense": 4,
+            "fused": 4
+          }
+        },
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 23,
+          "heading_path": "Campionate europene",
+          "score": -1.3023,
+          "ranks": {
+            "dense": 3,
+            "fused": 3
+          }
+        },
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 44,
+          "heading_path": "100 puncte",
+          "score": -1.3664,
+          "ranks": {
+            "dense": 8,
+            "fused": 8
+          }
+        }
+      ],
+      "ranks_by_search": {
+        "dense": 1,
+        "fused": 1
+      }
+    },
+    {
+      "id": "q07",
+      "type": "fact",
+      "verified": false,
+      "rank": 3,
+      "top_score": 3.631572723388672,
+      "top": [
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 17,
+          "heading_path": "Sesiuni științifice/academice organizate de către UBB",
+          "score": 3.6316,
+          "ranks": {
+            "dense": 3,
+            "fused": 3
+          }
+        },
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 16,
+          "heading_path": "Sesiuni științifice/academice organizate de către UBB",
+          "score": 3.1896,
+          "ranks": {
+            "dense": 8,
+            "fused": 8
+          }
+        },
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 22,
+          "heading_path": "Sesiuni științifice/academice organizate de către UBB",
+          "score": 2.9676,
+          "ranks": {
+            "dense": 5,
+            "fused": 5
+          }
+        },
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 49,
+          "heading_path": "până la......)",
+          "score": 2.5154,
+          "ranks": {
+            "dense": 12,
+            "fused": 12
+          }
+        },
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 19,
+          "heading_path": "Sesiuni științifice/academice organizate de către UBB",
+          "score": 2.3028,
+          "ranks": {
+            "dense": 6,
+            "fused": 6
+          }
+        }
+      ],
+      "ranks_by_search": {
+        "dense": 5,
+        "fused": 5
+      }
+    },
+    {
+      "id": "q08",
+      "type": "fact",
+      "verified": false,
+      "rank": 1,
+      "top_score": 3.207918167114258,
+      "top": [
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 14,
+          "heading_path": "Sesiuni științifice/academice organizate de către UBB",
+          "score": 3.2079,
+          "ranks": {
+            "dense": 4,
+            "fused": 4
+          }
+        },
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 19,
+          "heading_path": "Sesiuni științifice/academice organizate de către UBB",
+          "score": 2.7215,
+          "ranks": {
+            "dense": 3,
+            "fused": 3
+          }
+        },
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 27,
+          "heading_path": "Art. 27. (1)",
+          "score": 1.4683,
+          "ranks": {
+            "dense": 2,
+            "fused": 2
+          }
+        },
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 17,
+          "heading_path": "Sesiuni științifice/academice organizate de către UBB",
+          "score": 1.2315,
+          "ranks": {
+            "dense": 10,
+            "fused": 10
+          }
+        },
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 16,
+          "heading_path": "Sesiuni științifice/academice organizate de către UBB",
+          "score": 0.8659,
+          "ranks": {
+            "dense": 14,
+            "fused": 14
+          }
+        }
+      ],
+      "ranks_by_search": {
+        "dense": 4,
+        "fused": 4
+      }
+    },
+    {
+      "id": "q09",
+      "type": "fact",
+      "verified": false,
+      "rank": 1,
+      "top_score": 6.37167501449585,
+      "top": [
+        {
+          "source": "ubb/ghid_finalizare_studii_2026.docx",
+          "page": null,
+          "heading_path": "",
+          "score": 6.3717,
+          "ranks": {
+            "dense": 1,
+            "fused": 1
+          }
+        },
+        {
+          "source": "ubb/referat_coordonator.docx",
+          "page": null,
+          "heading_path": "Facultatea de Matematică și Informatică",
+          "score": -1.5258,
+          "ranks": {
+            "dense": 11,
+            "fused": 11
+          }
+        },
+        {
+          "source": "ubb/ghid_finalizare_studii_2026.docx",
+          "page": null,
+          "heading_path": "",
+          "score": -2.0536,
+          "ranks": {
+            "dense": 2,
+            "fused": 2
+          }
+        },
+        {
+          "source": "ubb/barem_sustinere_licenta.docx",
+          "page": null,
+          "heading_path": "Facultatea de Matematică și Informatică",
+          "score": -2.1605,
+          "ranks": {
+            "dense": 5,
+            "fused": 5
+          }
+        },
+        {
+          "source": "ubb/barem_sustinere_licenta.docx",
+          "page": null,
+          "heading_path": "Facultatea de Matematică și Informatică",
+          "score": -2.6903,
+          "ranks": {
+            "dense": 17,
+            "fused": 17
+          }
+        }
+      ],
+      "ranks_by_search": {
+        "dense": 1,
+        "fused": 1
+      }
+    },
+    {
+      "id": "q10",
+      "type": "paraphrase",
+      "verified": false,
+      "rank": 1,
+      "top_score": 4.747308254241943,
+      "top": [
+        {
+          "source": "ubb/ghid_finalizare_studii_2026.docx",
+          "page": null,
+          "heading_path": "",
+          "score": 4.7473,
+          "ranks": {
+            "dense": 1,
+            "fused": 1
+          }
+        },
+        {
+          "source": "ubb/ghid_finalizare_studii_2026.docx",
+          "page": null,
+          "heading_path": "",
+          "score": -3.254,
+          "ranks": {
+            "dense": 3,
+            "fused": 3
+          }
+        },
+        {
+          "source": "ubb/ghid_finalizare_studii_2026.docx",
+          "page": null,
+          "heading_path": "",
+          "score": -4.0517,
+          "ranks": {
+            "dense": 4,
+            "fused": 4
+          }
+        },
+        {
+          "source": "ubb/ghid_finalizare_studii_2026.docx",
+          "page": null,
+          "heading_path": "",
+          "score": -4.3222,
+          "ranks": {
+            "dense": 2,
+            "fused": 2
+          }
+        },
+        {
+          "source": "ubb/ghid_finalizare_studii_2026.docx",
+          "page": null,
+          "heading_path": "",
+          "score": -4.4101,
+          "ranks": {
+            "dense": 7,
+            "fused": 7
+          }
+        }
+      ],
+      "ranks_by_search": {
+        "dense": 1,
+        "fused": 1
+      }
+    },
+    {
+      "id": "q11",
+      "type": "fact",
+      "verified": false,
+      "rank": 1,
+      "top_score": 4.031801700592041,
+      "top": [
+        {
+          "source": "ubb/barem_sustinere_licenta.docx",
+          "page": null,
+          "heading_path": "Facultatea de Matematică și Informatică",
+          "score": 4.0318,
+          "ranks": {
+            "dense": 1,
+            "fused": 1
+          }
+        },
+        {
+          "source": "ubb/barem_sustinere_licenta.docx",
+          "page": null,
+          "heading_path": "Facultatea de Matematică și Informatică",
+          "score": 1.9692,
+          "ranks": {
+            "dense": 2,
+            "fused": 2
+          }
+        },
+        {
+          "source": "ubb/fisa_evaluare_practica_informatica.xlsx",
+          "page": null,
+          "heading_path": "Sheet1",
+          "score": -0.3242,
+          "ranks": {
+            "dense": 16,
+            "fused": 16
+          }
+        },
+        {
+          "source": "ubb/fisa_evaluare_practica_informatica.xlsx",
+          "page": null,
+          "heading_path": "Sheet1",
+          "score": -0.4481,
+          "ranks": {
+            "dense": 4,
+            "fused": 4
+          }
+        },
+        {
+          "source": "ubb/referat_coordonator.docx",
+          "page": null,
+          "heading_path": "Facultatea de Matematică și Informatică",
+          "score": -1.8126,
+          "ranks": {
+            "dense": 9,
+            "fused": 9
+          }
+        }
+      ],
+      "ranks_by_search": {
+        "dense": 1,
+        "fused": 1
+      }
+    },
+    {
+      "id": "q12",
+      "type": "fact",
+      "verified": false,
+      "rank": null,
+      "top_score": -1.2495267391204834,
+      "top": [
+        {
+          "source": "ubb/barem_sustinere_licenta.docx",
+          "page": null,
+          "heading_path": "Facultatea de Matematică și Informatică",
+          "score": -1.2495,
+          "ranks": {
+            "dense": 7,
+            "fused": 7
+          }
+        },
+        {
+          "source": "ubb/regulament_practica_ubb.html",
+          "page": null,
+          "heading_path": "",
+          "score": -3.4799,
+          "ranks": {
+            "dense": 5,
+            "fused": 5
+          }
+        },
+        {
+          "source": "ubb/programa_informatica_definitivat.pdf",
+          "page": 6,
+          "heading_path": "Programa > obținerea gradului didactic II > INFORMATICĂ > TEME DE METODICA PREDĂRII DISCIPLINEI",
+          "score": -3.557,
+          "ranks": {
+            "dense": 15,
+            "fused": 15
+          }
+        },
+        {
+          "source": "ubb/programa_informatica_definitivat.pdf",
+          "page": 12,
+          "heading_path": "Programa > obținerea gradului didactic II > INFORMATICĂ > TEME DE METODICA PREDĂRII DISCIPLINEI",
+          "score": -3.557,
+          "ranks": {
+            "dense": 16,
+            "fused": 16
+          }
+        },
+        {
+          "source": "ubb/barem_sustinere_licenta.docx",
+          "page": null,
+          "heading_path": "Facultatea de Matematică și Informatică",
+          "score": -3.6316,
+          "ranks": {
+            "dense": 19,
+            "fused": 19
+          }
+        }
+      ],
+      "ranks_by_search": {}
+    },
+    {
+      "id": "q13",
+      "type": "fact",
+      "verified": false,
+      "rank": null,
+      "top_score": -1.1025582551956177,
+      "top": [
+        {
+          "source": "ubb/tematica_licenta_informatica_2026.pdf",
+          "page": 2,
+          "heading_path": "Specializarea Informatică > Notă",
+          "score": -1.1026,
+          "ranks": {
+            "dense": 8,
+            "fused": 8
+          }
+        },
+        {
+          "source": "ubb/programa_informatica_definitivat.pdf",
+          "page": 9,
+          "heading_path": "Programa > obținerea gradului didactic II > INFORMATICĂ > Bibliografie orientativă (Universitățile în cadrul cărora se susțin examene pentru obținerea gradelor didactice pot",
+          "score": -4.2786,
+          "ranks": {
+            "dense": 4,
+            "fused": 4
+          }
+        },
+        {
+          "source": "ubb/programa_informatica_definitivat.pdf",
+          "page": 4,
+          "heading_path": "Programa > obținerea gradului didactic II > INFORMATICĂ > Bibliografie orientativă (Universitățile în cadrul cărora se susțin examene pentru obținerea gradelor didactice pot",
+          "score": -4.3449,
+          "ranks": {
+            "dense": 3,
+            "fused": 3
+          }
+        },
+        {
+          "source": "ubb/programa_informatica_definitivat.pdf",
+          "page": 5,
+          "heading_path": "Programa > obținerea gradului didactic II > INFORMATICĂ > Bibliografie orientativă (Universitățile în cadrul cărora se susțin examene pentru obținerea gradelor didactice pot",
+          "score": -4.6233,
+          "ranks": {
+            "dense": 9,
+            "fused": 9
+          }
+        },
+        {
+          "source": "ubb/regulament_practica_ubb.html",
+          "page": null,
+          "heading_path": "",
+          "score": -5.2336,
+          "ranks": {
+            "dense": 7,
+            "fused": 7
+          }
+        }
+      ],
+      "ranks_by_search": {}
+    },
+    {
+      "id": "q14",
+      "type": "fact",
+      "verified": false,
+      "rank": 2,
+      "top_score": 9.373738288879395,
+      "top": [
+        {
+          "source": "ubb/gdpr.pdf",
+          "page": 52,
+          "heading_path": "REGULAMENTE > CAPITOLUL IV > Secțiunea 2 > Articolul 33",
+          "score": 9.3737,
+          "ranks": {
+            "dense": 1,
+            "fused": 1
+          }
+        },
+        {
+          "source": "ubb/gdpr.pdf",
+          "page": 17,
+          "heading_path": "REGULAMENTE",
+          "score": 8.6792,
+          "ranks": {
+            "dense": 2,
+            "fused": 2
+          }
+        },
+        {
+          "source": "ubb/gdpr.pdf",
+          "page": 17,
+          "heading_path": "REGULAMENTE",
+          "score": 4.357,
+          "ranks": {
+            "dense": 4,
+            "fused": 4
+          }
+        },
+        {
+          "source": "ubb/gdpr.pdf",
+          "page": 17,
+          "heading_path": "REGULAMENTE",
+          "score": 2.2796,
+          "ranks": {
+            "dense": 9,
+            "fused": 9
+          }
+        },
+        {
+          "source": "ubb/gdpr.pdf",
+          "page": 54,
+          "heading_path": "REGULAMENTE > CAPITOLUL IV > Secțiunea 3 > Articolul 36",
+          "score": 1.7675,
+          "ranks": {
+            "dense": 11,
+            "fused": 11
+          }
+        }
+      ],
+      "ranks_by_search": {
+        "dense": 2,
+        "fused": 2
+      }
+    },
+    {
+      "id": "q15",
+      "type": "paraphrase",
+      "verified": false,
+      "rank": 1,
+      "top_score": 0.9021896123886108,
+      "top": [
+        {
+          "source": "ubb/gdpr.pdf",
+          "page": 37,
+          "heading_path": "REGULAMENTE > CAPITOLUL II > Articolul 8",
+          "score": 0.9022,
+          "ranks": {
+            "dense": 1,
+            "fused": 1
+          }
+        },
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 17,
+          "heading_path": "Sesiuni științifice/academice organizate de către UBB",
+          "score": -4.6526,
+          "ranks": {
+            "dense": 13,
+            "fused": 13
+          }
+        },
+        {
+          "source": "ubb/gdpr.pdf",
+          "page": 11,
+          "heading_path": "REGULAMENTE",
+          "score": -4.9795,
+          "ranks": {
+            "dense": 3,
+            "fused": 3
+          }
+        },
+        {
+          "source": "ubb/gdpr.pdf",
+          "page": 7,
+          "heading_path": "REGULAMENTE",
+          "score": -5.0523,
+          "ranks": {
+            "dense": 4,
+            "fused": 4
+          }
+        },
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 18,
+          "heading_path": "Sesiuni științifice/academice organizate de către UBB",
+          "score": -5.4166,
+          "ranks": {
+            "dense": 10,
+            "fused": 10
+          }
+        }
+      ],
+      "ranks_by_search": {
+        "dense": 1,
+        "fused": 1
+      }
+    },
+    {
+      "id": "q16",
+      "type": "fact",
+      "verified": false,
+      "rank": 1,
+      "top_score": 6.89478874206543,
+      "top": [
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 10,
+          "heading_path": "ECTS key features",
+          "score": 6.8948,
+          "ranks": {
+            "dense": 3,
+            "fused": 3
+          }
+        },
+        {
+          "source": "ubb/regulament_activitate_profesionala.pdf",
+          "page": 1,
+          "heading_path": "CAP. I. DISPOZIȚII GENERALE",
+          "score": -0.2756,
+          "ranks": {
+            "dense": 1,
+            "fused": 1
+          }
+        },
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 10,
+          "heading_path": "ECTS key features",
+          "score": -0.6055,
+          "ranks": {
+            "dense": 6,
+            "fused": 6
+          }
+        },
+        {
+          "source": "ubb/regulament_activitate_profesionala.pdf",
+          "page": 4,
+          "heading_path": "CAP. IV. FRECVENȚA LA ACTIVITATEA DIDACTICĂ, OBȚINEREA CREDITELOR ȘI PROMOVAREA",
+          "score": -1.6214,
+          "ranks": {
+            "dense": 2,
+            "fused": 2
+          }
+        },
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 45,
+          "heading_path": "ECTS and lifelong learning",
+          "score": -1.7619,
+          "ranks": {
+            "dense": 12,
+            "fused": 12
+          }
+        }
+      ],
+      "ranks_by_search": {
+        "dense": 3,
+        "fused": 3
+      }
+    },
+    {
+      "id": "q17",
+      "type": "cross_lingual",
+      "verified": false,
+      "rank": 1,
+      "top_score": 1.8290762901306152,
+      "top": [
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 10,
+          "heading_path": "ECTS key features",
+          "score": 1.8291,
+          "ranks": {
+            "dense": 14,
+            "fused": 14
+          }
+        },
+        {
+          "source": "ubb/ects_users_guide_2015.pdf",
+          "page": 10,
+          "heading_path": "ECTS key features",
+          "score": 0.354,
+          "ranks": {
+            "dense": 17,
+            "fused": 17
+          }
+        },
+        {
+          "source": "ubb/regulament_activitate_profesionala.pdf",
+          "page": 4,
+          "heading_path": "CAP. IV. FRECVENȚA LA ACTIVITATEA DIDACTICĂ, OBȚINEREA CREDITELOR ȘI PROMOVAREA",
+          "score": 0.2585,
+          "ranks": {
+            "dense": 1,
+            "fused": 1
+          }
+        },
+        {
+          "source": "ubb/regulament_activitate_profesionala.pdf",
+          "page": 8,
+          "heading_path": "CAP. IV. FRECVENȚA LA ACTIVITATEA DIDACTICĂ, OBȚINEREA CREDITELOR ȘI PROMOVAREA",
+          "score": -1.2543,
+          "ranks": {
+            "dense": 3,
+            "fused": 3
+          }
+        },
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 4,
+          "heading_path": "Modificat și completat prin HS nr. 146/25.09.2025-",
+          "score": -3.0943,
+          "ranks": {
+            "dense": 15,
+            "fused": 15
+          }
+        }
+      ],
+      "ranks_by_search": {
+        "dense": 14,
+        "fused": 14
+      }
+    },
+    {
+      "id": "q18",
+      "type": "cross_lingual",
+      "verified": false,
+      "rank": null,
+      "top_score": -0.22309502959251404,
+      "top": [
+        {
+          "source": "ubb/Convolutional_Spiking_Neural_Networks_for_Human_Action_Recognition_EN.pdf",
+          "page": 18,
+          "heading_path": "Theoretical Background",
+          "score": -0.2231,
+          "ranks": {
+            "dense": 13,
+            "fused": 13
+          }
+        },
+        {
+          "source": "ubb/regulament_practica_ubb.html",
+          "page": null,
+          "heading_path": "",
+          "score": -5.6041,
+          "ranks": {
+            "dense": 6,
+            "fused": 6
+          }
+        },
+        {
+          "source": "ubb/referat_coordonator.docx",
+          "page": null,
+          "heading_path": "Facultatea de Matematică și Informatică",
+          "score": -6.6341,
+          "ranks": {
+            "dense": 20,
+            "fused": 20
+          }
+        },
+        {
+          "source": "ubb/referat_coordonator.docx",
+          "page": null,
+          "heading_path": "Facultatea de Matematică și Informatică",
+          "score": -6.7469,
+          "ranks": {
+            "dense": 3,
+            "fused": 3
+          }
+        },
+        {
+          "source": "ubb/fisa_evaluare_practica_informatica.xlsx",
+          "page": null,
+          "heading_path": "Sheet1",
+          "score": -7.1641,
+          "ranks": {
+            "dense": 4,
+            "fused": 4
+          }
+        }
+      ],
+      "ranks_by_search": {}
+    },
+    {
+      "id": "q19",
+      "type": "table",
+      "verified": false,
+      "rank": null,
+      "top_score": 1.427440881729126,
+      "top": [
+        {
+          "source": "ubb/Convolutional_Spiking_Neural_Networks_for_Human_Action_Recognition_EN.pdf",
+          "page": 35,
+          "heading_path": "Theoretical Background > CSNN Branch: Neuromorphic Pipeline > Frame Cache and Loading into Simulator",
+          "score": 1.4274,
+          "ranks": {
+            "dense": 9,
+            "fused": 9
+          }
+        },
+        {
+          "source": "ubb/Convolutional_Spiking_Neural_Networks_for_Human_Action_Recognition_EN.pdf",
+          "page": 48,
+          "heading_path": "Experiments and Evaluation > Comparison with KTH Literature",
+          "score": 1.2912,
+          "ranks": {
+            "dense": 2,
+            "fused": 2
+          }
+        },
+        {
+          "source": "ubb/Convolutional_Spiking_Neural_Networks_for_Human_Action_Recognition_EN.pdf",
+          "page": 5,
+          "heading_path": "Theoretical Background > ON/OFF Filtering: Difference of Gaussians Filter (DoG) > HOG — Histogram of Oriented Gradients",
+          "score": 1.0882,
+          "ranks": {
+            "dense": 6,
+            "fused": 6
+          }
+        },
+        {
+          "source": "ubb/Convolutional_Spiking_Neural_Networks_for_Human_Action_Recognition_EN.pdf",
+          "page": 53,
+          "heading_path": "Conclusions and Future Directions > Limitations",
+          "score": 1.0824,
+          "ranks": {
+            "dense": 20,
+            "fused": 20
+          }
+        },
+        {
+          "source": "ubb/Convolutional_Spiking_Neural_Networks_for_Human_Action_Recognition_EN.pdf",
+          "page": 40,
+          "heading_path": "Theoretical Background > Methodological Comparison: CNN vs. CSNN",
+          "score": 0.6619,
+          "ranks": {
+            "dense": 18,
+            "fused": 18
+          }
+        }
+      ],
+      "ranks_by_search": {}
+    },
+    {
+      "id": "q20",
+      "type": "cross_lingual",
+      "verified": false,
+      "rank": 2,
+      "top_score": 7.032888889312744,
+      "top": [
+        {
+          "source": "ubb/Convolutional_Spiking_Neural_Networks_for_Human_Action_Recognition_EN.pdf",
+          "page": 51,
+          "heading_path": "Conclusions and Future Directions",
+          "score": 7.0329,
+          "ranks": {
+            "dense": 3,
+            "fused": 3
+          }
+        },
+        {
+          "source": "ubb/Convolutional_Spiking_Neural_Networks_for_Human_Action_Recognition_EN.pdf",
+          "page": 42,
+          "heading_path": "Experiments and Evaluation > CNN Results",
+          "score": 5.3563,
+          "ranks": {
+            "dense": 2,
+            "fused": 2
+          }
+        },
+        {
+          "source": "ubb/Convolutional_Spiking_Neural_Networks_for_Human_Action_Recognition_EN.pdf",
+          "page": 55,
+          "heading_path": "Conclusions and Future Directions > Final Conclusion",
+          "score": 4.8181,
+          "ranks": {
+            "dense": 4,
+            "fused": 4
+          }
+        },
+        {
+          "source": "ubb/Convolutional_Spiking_Neural_Networks_for_Human_Action_Recognition_EN.pdf",
+          "page": 1,
+          "heading_path": "",
+          "score": 0.9248,
+          "ranks": {
+            "dense": 6,
+            "fused": 6
+          }
+        },
+        {
+          "source": "ubb/Convolutional_Spiking_Neural_Networks_for_Human_Action_Recognition_EN.pdf",
+          "page": 48,
+          "heading_path": "Experiments and Evaluation > Comparison with KTH Literature",
+          "score": -0.4982,
+          "ranks": {
+            "dense": 10,
+            "fused": 10
+          }
+        }
+      ],
+      "ranks_by_search": {
+        "dense": 2,
+        "fused": 2
+      }
+    },
+    {
+      "id": "q21",
+      "type": "table",
+      "verified": false,
+      "rank": 1,
+      "top_score": 2.0790445804595947,
+      "top": [
+        {
+          "source": "ubb/fisa_evaluare_practica_informatica.xlsx",
+          "page": null,
+          "heading_path": "Sheet1",
+          "score": 2.079,
+          "ranks": {
+            "dense": 1,
+            "fused": 1
+          }
+        },
+        {
+          "source": "ubb/fisa_disciplinei_practica_informatica.pdf",
+          "page": 4,
+          "heading_path": "10. Evaluare",
+          "score": -0.1798,
+          "ranks": {
+            "dense": 3,
+            "fused": 3
+          }
+        },
+        {
+          "source": "ubb/regulament_practica_ubb.html",
+          "page": null,
+          "heading_path": "Regulamentul Universității Babeș-Bolyai Cluj-Napoca privind cadrul general de organizare și desfășurare a practicii de specialitate a studenților la nivel licență și master",
+          "score": -1.5997,
+          "ranks": {
+            "dense": 6,
+            "fused": 6
+          }
+        },
+        {
+          "source": "ubb/regulament_activitate_profesionala.pdf",
+          "page": 5,
+          "heading_path": "CAP. IV. FRECVENȚA LA ACTIVITATEA DIDACTICĂ, OBȚINEREA CREDITELOR ȘI PROMOVAREA",
+          "score": -2.0858,
+          "ranks": {
+            "dense": 10,
+            "fused": 10
+          }
+        },
+        {
+          "source": "ubb/regulament_activitate_profesionala.pdf",
+          "page": 6,
+          "heading_path": "CAP. IV. FRECVENȚA LA ACTIVITATEA DIDACTICĂ, OBȚINEREA CREDITELOR ȘI PROMOVAREA",
+          "score": -2.405,
+          "ranks": {
+            "dense": 17,
+            "fused": 17
+          }
+        }
+      ],
+      "ranks_by_search": {
+        "dense": 1,
+        "fused": 1
+      }
+    },
+    {
+      "id": "q22",
+      "type": "cross_lingual",
+      "verified": false,
+      "rank": null,
+      "top_score": 0.48532408475875854,
+      "top": [
+        {
+          "source": "ubb/regulament_practica_ubb.html",
+          "page": null,
+          "heading_path": "Regulamentul Universității Babeș-Bolyai Cluj-Napoca privind cadrul general de organizare și desfășurare a practicii de specialitate a studenților la nivel licență și master",
+          "score": 0.4853,
+          "ranks": {
+            "dense": 3,
+            "fused": 3
+          }
+        },
+        {
+          "source": "ubb/regulament_practica_ubb.html",
+          "page": null,
+          "heading_path": "Regulamentul Universității Babeș-Bolyai Cluj-Napoca privind cadrul general de organizare și desfășurare a practicii de specialitate a studenților la nivel licență și master",
+          "score": -0.1819,
+          "ranks": {
+            "dense": 2,
+            "fused": 2
+          }
+        },
+        {
+          "source": "ubb/regulament_practica_ubb.html",
+          "page": null,
+          "heading_path": "Regulamentul Universității Babeș-Bolyai Cluj-Napoca privind cadrul general de organizare și desfășurare a practicii de specialitate a studenților la nivel licență și master",
+          "score": -0.9972,
+          "ranks": {
+            "dense": 1,
+            "fused": 1
+          }
+        },
+        {
+          "source": "ubb/regulament_activitate_profesionala.pdf",
+          "page": 1,
+          "heading_path": "CAP. I. DISPOZIȚII GENERALE",
+          "score": -2.2782,
+          "ranks": {
+            "dense": 7,
+            "fused": 7
+          }
+        },
+        {
+          "source": "ubb/regulament_practica_ubb.html",
+          "page": null,
+          "heading_path": "Regulamentul Universității Babeș-Bolyai Cluj-Napoca privind cadrul general de organizare și desfășurare a practicii de specialitate a studenților la nivel licență și master",
+          "score": -2.4442,
+          "ranks": {
+            "dense": 12,
+            "fused": 12
+          }
+        }
+      ],
+      "ranks_by_search": {}
+    },
+    {
+      "id": "q23",
+      "type": "unanswerable",
+      "verified": false,
+      "rank": null,
+      "top_score": -4.163489818572998,
+      "top": [
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 31,
+          "heading_path": "Cuantumurile burselor și sursele de finanțare aferente",
+          "score": -4.1635,
+          "ranks": {
+            "dense": 18,
+            "fused": 18
+          }
+        },
+        {
+          "source": "ubb/regulament_activitate_profesionala.pdf",
+          "page": 3,
+          "heading_path": "CAP. III. DREPTURILE ȘI OBLIGAȚIILE STUDENTULUI",
+          "score": -5.2742,
+          "ranks": {
+            "dense": 16,
+            "fused": 16
+          }
+        },
+        {
+          "source": "ubb/regulament_practica_ubb.html",
+          "page": null,
+          "heading_path": "Regulamentul Universității Babeș-Bolyai Cluj-Napoca privind cadrul general de organizare și desfășurare a practicii de specialitate a studenților la nivel licență și master",
+          "score": -5.4551,
+          "ranks": {
+            "dense": 1,
+            "fused": 1
+          }
+        },
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 13,
+          "heading_path": "Sesiuni științifice/academice organizate de către UBB",
+          "score": -5.7676,
+          "ranks": {
+            "dense": 19,
+            "fused": 19
+          }
+        },
+        {
+          "source": "ubb/regulament_burse.pdf",
+          "page": 14,
+          "heading_path": "Sesiuni științifice/academice organizate de către UBB",
+          "score": -5.891,
+          "ranks": {
+            "dense": 13,
+            "fused": 13
+          }
+        }
+      ],
+      "ranks_by_search": {}
+    },
+    {
+      "id": "q24",
+      "type": "unanswerable",
+      "verified": false,
+      "rank": null,
+      "top_score": 0.4782564043998718,
+      "top": [
+        {
+          "source": "ubb/fisa_disciplinei_practica_informatica.pdf",
+          "page": 1,
+          "heading_path": "Facultatea de Matematică și Informatică",
+          "score": 0.4783,
+          "ranks": {
+            "dense": 3,
+            "fused": 3
+          }
+        },
+        {
+          "source": "ubb/ghid_finalizare_studii_2026.docx",
+          "page": null,
+          "heading_path": "BABEȘ-BOLYAI UNIVERSITÄT CLUJ-NAPOCA > Eingereicht von",
+          "score": 0.0453,
+          "ranks": {
+            "dense": 4,
+            "fused": 4
+          }
+        },
+        {
+          "source": "ubb/regulament_practica_ubb.html",
+          "page": null,
+          "heading_path": "",
+          "score": -1.1109,
+          "ranks": {
+            "dense": 8,
+            "fused": 8
+          }
+        },
+        {
+          "source": "ubb/regulament_practica_ubb.html",
+          "page": null,
+          "heading_path": "",
+          "score": -1.6001,
+          "ranks": {
+            "dense": 1,
+            "fused": 1
+          }
+        },
+        {
+          "source": "ubb/regulament_practica_ubb.html",
+          "page": null,
+          "heading_path": "",
+          "score": -2.2111,
+          "ranks": {
+            "dense": 12,
+            "fused": 12
+          }
+        }
+      ],
+      "ranks_by_search": {}
+    },
+    {
+      "id": "q25",
+      "type": "unanswerable",
+      "verified": false,
+      "rank": null,
+      "top_score": -5.598354816436768,
+      "top": [
+        {
+          "source": "ubb/regulament_activitate_profesionala.pdf",
+          "page": 3,
+          "heading_path": "CAP. III. DREPTURILE ȘI OBLIGAȚIILE STUDENTULUI",
+          "score": -5.5984,
+          "ranks": {
+            "dense": 6,
+            "fused": 6
+          }
+        },
+        {
+          "source": "ubb/regulament_activitate_profesionala.pdf",
+          "page": 3,
+          "heading_path": "CAP. III. DREPTURILE ȘI OBLIGAȚIILE STUDENTULUI",
+          "score": -6.2312,
+          "ranks": {
+            "dense": 9,
+            "fused": 9
+          }
+        },
+        {
+          "source": "ubb/regulament_practica_ubb.html",
+          "page": null,
+          "heading_path": "",
+          "score": -6.469,
+          "ranks": {
+            "dense": 2,
+            "fused": 2
+          }
+        },
+        {
+          "source": "ubb/regulament_practica_ubb.html",
+          "page": null,
+          "heading_path": "",
+          "score": -6.4983,
+          "ranks": {
+            "dense": 1,
+            "fused": 1
+          }
+        },
+        {
+          "source": "ubb/ghid_finalizare_studii_2026.docx",
+          "page": null,
+          "heading_path": "BABEȘ-BOLYAI UNIVERSITÄT CLUJ-NAPOCA > Eingereicht von",
+          "score": -6.608,
+          "ranks": {
+            "dense": 18,
+            "fused": 18
+          }
+        }
+      ],
+      "ranks_by_search": {}
+    }
+  ],
+  "questions_file": "data/eval/questions.jsonl",
+  "seconds": 47.9
+}
